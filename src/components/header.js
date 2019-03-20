@@ -8,6 +8,7 @@ export default () => (
 		<HexBackground rows={10} columns={25}/>	
 		<div class='header__content'>
 			<h1 class='header__title'>Shel Soloa</h1>
+			<p class='header__subtitle'>developer</p>
 		</div>
 	</header>
 )

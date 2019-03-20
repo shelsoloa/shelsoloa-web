@@ -1,8 +1,9 @@
 $hexratio: 0.866;
-
 $hexheight: 80px;
 $hexwidth: $hexheight * $hexratio;
 
+$hexcolor: #292929;
+$hexhighlight: #FF8C00;
 
 .hexcontainer {  
   display: block;
@@ -52,10 +53,10 @@ $hexwidth: $hexheight * $hexratio;
   position: absolute;
   top: 5%;
   left: 5%;
-  background: #292929;
+  background: $hexcolor;
 }
 .hexcontainer__hex:hover {
-  background: #FF8C00;
+  background: $hexhighlight;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   z-index: 10;
