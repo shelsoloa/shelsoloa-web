@@ -1,7 +1,7 @@
 @import 'base';
 
 body {
-	background-color: #222;
+	background-color: black;
 	color: white;
 }
 
@@ -25,14 +25,26 @@ header {
 		width: 100%;
 	}
 
+	.header__content * {
+		pointer-events: all;
+	}
+
 	.header__title {
 		background-color: black;
-		padding: 1rem;
 
-		display: block;
+		font-family: 'Damion';
+		font-size: 3rem;
 
-		pointer-events: all;
+		margin-top: 10rem;
+
+		padding: 0.25rem 1rem;
 
 		white-space: nowrap;
+	}
+
+	.header__subtitle {
+		background-color: black;
+
+		padding: 0 1rem;
 	}
 }
