@@ -1,7 +1,7 @@
 @import 'base';
 
 body {
-	background-color: black;
+	background-color: #222;
 	color: white;
 }
 
@@ -30,7 +30,9 @@ header {
 	}
 
 	.header__title {
-		background-color: black;
+		background-color: #222;
+
+		border: 2px solid white;
 
 		font-family: 'Damion';
 		font-size: 3rem;
@@ -43,8 +45,16 @@ header {
 	}
 
 	.header__subtitle {
-		background-color: black;
+		background-color: #222;
 
 		padding: 0 1rem;
 	}
+}
+
+nav {
+	float: left;
+	width: 20vw;
+}
+
+footer {
 }

@@ -1,9 +1,10 @@
 import React from "react"
 import Layout from "../components/layout"
+import Divider from "../components/divider"
 
 export default () => (
 	<Layout>
-		<h1>Hello world!</h1>
-		<p>Lorem ipsum dolor sitem</p>
+		<Divider name='Projects'>
+		</Divider>
 	</Layout>
 )
