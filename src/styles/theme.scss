@@ -1,0 +1,11 @@
+@import 'base';
+
+body {
+	background-color: $background-color;
+	color: white;
+}
+
+header {
+	max-height: 60vh;
+	overflow: hidden;
+}

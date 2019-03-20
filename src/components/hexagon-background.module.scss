@@ -1,0 +1,61 @@
+$hexratio: 0.866;
+
+$hexheight: 80px;
+$hexwidth: $hexheight * $hexratio;
+
+
+.hexcontainer {
+  margin-left: min($hexwidth) / -.666;
+  white-space: nowrap;
+  display: block;
+  overflow: hidden;
+  background: #262626;
+
+}
+.hexcontainer__hexrow {
+  margin-top: $hexheight * -.333;
+}
+.hexcontainer__hexrow:nth-child(2n) {
+  margin-left: $hexwidth / -2;
+}
+
+.hexcontainer__hex {
+  display: inline-block;
+  z-index: 1;
+}
+
+.hexcontainer__hex,
+.hexcontainer__hex:after {
+  width: $hexwidth;
+  height: $hexheight;
+
+  position: relative;
+  background: #262626;
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+          clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  
+  /*fade out*/
+  -webkit-transition: all 2s ease-out;
+  transition:         all 2s ease-out;
+}
+
+.hexcontainer__hex:after {
+  content: "";
+  width: 90%;
+  height: 90%;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  background: #292929;
+}
+
+.hexcontainer__hex:hover {
+  background: #FF8C00;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  z-index: 10;
+
+  /*fade in*/
+  -webkit-transition: all 600ms cubic-bezier(0.175, 0.885, 0.32, 2);
+  transition:         all 600ms cubic-bezier(0.175, 0.885, 0.32, 2);
+}
