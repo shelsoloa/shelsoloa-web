@@ -1,11 +1,38 @@
 @import 'base';
 
 body {
-	background-color: $background-color;
+	background-color: #222;
 	color: white;
 }
 
 header {
-	max-height: 60vh;
+	// Header uses HexBackground. The hex elements in HexBackground raise their
+	// z-index up to around 12, therefore content must go above 12z. NOT the
+	// content div itself because that will block the hover effect
+
+	height: 60vh;
 	overflow: hidden;
+	position: relative;
+
+	.header__content {
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		height: 100%;
+		pointer-events: none; // so this can be full width but not swallow hover
+		position: relative;
+		width: 100%;
+	}
+
+	.header__title {
+		background-color: black;
+		padding: 1rem;
+
+		display: block;
+
+		pointer-events: all;
+
+		white-space: nowrap;
+	}
 }

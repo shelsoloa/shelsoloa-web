@@ -4,14 +4,22 @@ $hexheight: 80px;
 $hexwidth: $hexheight * $hexratio;
 
 
-.hexcontainer {
-  margin-left: min($hexwidth) / -.666;
-  white-space: nowrap;
+.hexcontainer {  
   display: block;
+  
+  margin-left: min($hexwidth) / -.666; // clip the left side for effect
+  
   overflow: hidden;
-  background: #262626;
+  
+  position: absolute;
+  left: 0;
+  top: 0;
 
+  white-space: nowrap;
+
+  z-index: 0;  // explicitly create new stacking context
 }
+
 .hexcontainer__hexrow {
   margin-top: $hexheight * -.333;
 }
@@ -21,16 +29,15 @@ $hexwidth: $hexheight * $hexratio;
 
 .hexcontainer__hex {
   display: inline-block;
-  z-index: 1;
+  z-index: 0;
 }
-
 .hexcontainer__hex,
 .hexcontainer__hex:after {
   width: $hexwidth;
   height: $hexheight;
 
   position: relative;
-  background: #262626;
+  background: inherit;
   -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
           clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   
@@ -38,7 +45,6 @@ $hexwidth: $hexheight * $hexratio;
   -webkit-transition: all 2s ease-out;
   transition:         all 2s ease-out;
 }
-
 .hexcontainer__hex:after {
   content: "";
   width: 90%;
@@ -48,7 +54,6 @@ $hexwidth: $hexheight * $hexratio;
   left: 5%;
   background: #292929;
 }
-
 .hexcontainer__hex:hover {
   background: #FF8C00;
   -webkit-transform: scale(1.1);

@@ -1,9 +1,8 @@
 import React from "react"
-import Header from "../components/header"
+import Layout from "../components/layout"
 
 export default () => (
-	<div>
-		<Header></Header>
-		<div>Hello world!</div>
-	</div>
+	<Layout>
+		<h1>Hello world!</h1>
+	</Layout>
 )
