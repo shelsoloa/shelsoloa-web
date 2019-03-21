@@ -1,5 +1,4 @@
 import React from "react"
-import { graphql } from "gatsby"
 import HexBackground from "./hexagon-background"
 
 

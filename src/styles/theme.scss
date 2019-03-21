@@ -10,7 +10,7 @@ header {
 	// z-index up to around 12, therefore content must go above 12z. NOT the
 	// content div itself because that will block the hover effect
 
-	height: 60vh;
+	height: 50vh;
 	overflow: hidden;
 	position: relative;
 
@@ -51,10 +51,37 @@ header {
 	}
 }
 
+.content-wrapper {
+	align-items: stretch;
+	display: flex;
+	min-height: 45vh;
+}
+
 nav {
-	float: left;
+	max-width: 200px;
 	width: 20vw;
+
+	li {
+		list-style: none;
+	}
+
+	a {
+		text-decoration: none;
+		color: white;
+	}
+	a:hover {
+		color: orange;
+	}
 }
 
 footer {
+	display: block;
+
+	width: 100%;
+	height: 5vh;
+
+	text-align: center;
+}
+
+.divider {
 }

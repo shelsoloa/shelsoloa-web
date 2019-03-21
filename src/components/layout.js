@@ -4,10 +4,14 @@ import Navigation from "./navigation"
 import Footer from "./footer"
 
 export default ({ children }) => (
-	<div>
+	<div className='layout'>
 		<Header/>
-		<Navigation/>
-		{children}
+		<div class='content-wrapper'>
+			<Navigation/>
+			<content>
+				{children}
+			</content>
+		</div>
 		<Footer/>
 	</div>
 )
