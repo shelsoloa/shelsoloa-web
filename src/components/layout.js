@@ -11,6 +11,7 @@ export default ({ children }) => (
 			<content>
 				{children}
 			</content>
+			<div class='content-margin'/>
 		</div>
 		<Footer/>
 	</div>

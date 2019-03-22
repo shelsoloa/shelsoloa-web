@@ -19,6 +19,7 @@ export default class Hexagon extends React.Component {
 				className={styling.hexagon}
 				style={{ 'width': w, 'height': h }}
 			>
+				{this.props.children}
 				<div
 					className={styling.hexagon__inner}
 					style={{ 'background' : this.props.background }}

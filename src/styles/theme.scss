@@ -1,5 +1,7 @@
 @import 'base';
 
+$content-margin: 20vw;
+
 body {
 	background-color: #222;
 	color: white;
@@ -57,9 +59,20 @@ header {
 	min-height: 45vh;
 }
 
+content {
+	width: 100%;
+}
+
+.content-margin {
+	// CSS workaround to allow for max-width on a margin
+
+	max-width: 200px;
+	width: $content-margin;
+}
+
 nav {
 	max-width: 200px;
-	width: 20vw;
+	width: $content-margin;
 
 	li {
 		list-style: none;
@@ -83,5 +96,7 @@ footer {
 	text-align: center;
 }
 
-.divider {
+.divider__content {
+	display: flex;
+	justify-content: space-between;
 }
