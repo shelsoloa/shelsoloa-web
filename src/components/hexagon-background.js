@@ -1,5 +1,6 @@
 import React from "react"
 import styling from "./hexagon-background.module.scss"
+import Hexagon from './hexagon'
 
 
 export default class HexBackground extends React.Component {
@@ -12,7 +13,7 @@ export default class HexBackground extends React.Component {
 
 			for (let c = 0; c < columns; c++) {
 				column.push(
-					<div className={styling.hexcontainer__hex}></div>
+					<Hexagon/>
 				)
 			}
 

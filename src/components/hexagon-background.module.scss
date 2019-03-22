@@ -28,12 +28,11 @@ $hexhighlight: #FF8C00;
   margin-left: $hexwidth / -2;
 }
 
-.hexcontainer__hex {
+.hexagon {
   display: inline-block;
   z-index: 0;
 }
-.hexcontainer__hex,
-.hexcontainer__hex:after {
+.hexagon, .hexagon__inner {
   width: $hexwidth;
   height: $hexheight;
 
@@ -46,8 +45,7 @@ $hexhighlight: #FF8C00;
   -webkit-transition: all 2s ease-out;
   transition:         all 2s ease-out;
 }
-.hexcontainer__hex:after {
-  content: "";
+.hexagon__inner {
   width: 90%;
   height: 90%;
   position: absolute;
@@ -55,7 +53,7 @@ $hexhighlight: #FF8C00;
   left: 5%;
   background: $hexcolor;
 }
-.hexcontainer__hex:hover {
+.hexagon:hover {
   background: $hexhighlight;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
