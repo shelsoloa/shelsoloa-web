@@ -1,5 +1,6 @@
 import React from "react"
-import styling from "./hexagon-background.module.scss"
+
+import styling from "./hexagon.module.scss"
 import Hexagon from './hexagon'
 
 
