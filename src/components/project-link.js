@@ -14,6 +14,7 @@ export default props => (
 				{props.label}
 			</h2>
 		</Link>
+		<p>{props.description}</p>
 		
 	</div>
 )
