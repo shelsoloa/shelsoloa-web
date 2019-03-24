@@ -18,7 +18,7 @@ export default class HexBackground extends React.Component {
 				)
 			}
 
-			hexes.push(<div className={styling.hexcontainer__hexrow}>{column}</div>);
+			hexes.push(<div className={styling.hex_container__hex_row}>{column}</div>);
 		}	
 
 		return hexes;
@@ -26,7 +26,7 @@ export default class HexBackground extends React.Component {
 
 	render() {
 		return(
-			<div className={styling.hexcontainer}>
+			<div className={styling.hex_container}>
 				{this.createHexes(this.props.rows, this.props.columns)}
 			</div>
 		)

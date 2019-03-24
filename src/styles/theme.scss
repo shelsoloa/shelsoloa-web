@@ -1,112 +1,43 @@
-@import 'base';
-
 $content-margin: 20vw;
 
+// $background-color: #FF3646;
+// $background-color: #6DA06F;
+$background-color: #073B4C;
+
 body {
-	background-color: #222;
+	background-color: $background-color;
 	color: white;
 }
 
-header {
-	// Header uses HexBackground. The hex elements in HexBackground raise their
-	// z-index up to around 12, therefore content must go above 12z. NOT the
-	// content div itself because that will block the hover effect
+content {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 
-	height: 50vh;
-	overflow: hidden;
+	min-height: 100vh;
+
+	pointer-events: none; // so this can be full width but not swallow hover
 	position: relative;
 
-	.header__content {
-		align-items: center;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		height: 100%;
-		pointer-events: none; // so this can be full width but not swallow hover
-		position: relative;
-		width: 100%;
-	}
-
-	.header__content * {
+	.content__wrapper {
 		pointer-events: all;
+
+		padding: 1rem;
+		height: 50%;
+
+		background-color: #073B4C;
+		border: 3px dashed #FF8C00;
 	}
 
-	.header__title {
-		background-color: #222;
-
-		border: 2px solid white;
-
+	.content__header {
 		font-family: 'Damion';
 		font-size: 3rem;
-
-		margin-top: 10rem;
-
-		padding: 0.25rem 1rem;
-
-		white-space: nowrap;
+		margin: 0;
 	}
 
-	.header__subtitle {
-		background-color: #222;
-
-		padding: 0 1rem;
+	.content__subheader {
+		color: #FF8C00;
+		padding-left: 1rem;
 	}
-}
-
-.content-wrapper {
-	padding-top: 5%;
-	align-items: stretch;
-	display: flex;
-	min-height: 45vh;
-}
-
-content {
-	width: 100%;
-}
-
-.content-margin {
-	// CSS workaround to allow for max-width on a margin
-
-	max-width: 200px;
-	width: $content-margin;
-}
-
-nav {
-	max-width: 200px;
-	width: $content-margin;
-
-	li {
-		list-style: none;
-	}
-
-	a {
-		text-decoration: none;
-		color: white;
-	}
-	a:hover {
-		color: orange;
-	}
-}
-
-footer {
-	display: block;
-
-	width: 100%;
-	height: 5vh;
-
-	text-align: center;
-}
-
-.divider {
-}
-
-.divider__header {
-	padding-top: 2.5%;
-	text-align: center;
-}
-
-.divider__content {
-	padding: 2.5%;
-	display: flex;
-	justify-content: space-between;
 }

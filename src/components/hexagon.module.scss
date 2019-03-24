@@ -13,13 +13,14 @@ $hex_color: #FF3646;
 // $hex_highlight: white;
 $hex_highlight: #EF476F;
 
-.hex_container {  
+.hex_container {
   display: block;
 
-  margin-left: 10%;
-  
+  margin-left: -10%;
+
   overflow: hidden;
 
+  width: 110%;
   height: 100%;
   
   position: absolute;
@@ -35,7 +36,7 @@ $hex_highlight: #EF476F;
   line-height: 0;
 
   // The y offset of each hex
-  margin-top: $hex_width * (-1 / 3) + ($hex_width * $hex_spacing);
+  margin-bottom: $hex_width * (-1 / 3) + ($hex_width * $hex_spacing);
 
   &:nth-child(2n) {    
     // The x offset of each row other row
