@@ -4,15 +4,18 @@ import { css } from "@emotion/core"
 
 import Layout from "../components/layout"
 
+import '../styles/index.scss'
+
+
 export default ({data}) => (
-	<Layout header='ShelSoloa' subheader="~">
+	<Layout class='index-page' header='ShelSoloa' subheader='~'>
 		<div 
-			class='index_wrap'
 			css={css`
 				height: 30vh;
 				width: 60vw;
 			`}
 		>
+
 			{/* Navigation Links */}
 			<Link to='/projects'>Projects</Link>
 			<Link to='/blog'>Writing</Link>
