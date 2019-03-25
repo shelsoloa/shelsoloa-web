@@ -1,5 +1,5 @@
 import React from "react"
-import HexBackground from "./hexagon-background"
+import { HexBackground } from "./hexagon"
 
 
 export default props => (
