@@ -3,6 +3,8 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 
+import '../styles/blog.scss'
+
 export default () => (
 	<Layout class='blog-page' header='Blog' subheader='~/blog/'>
 
