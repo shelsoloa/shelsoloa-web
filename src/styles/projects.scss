@@ -1,19 +1,29 @@
 .projects-page {
 
+	$offwhite: #F1FAEE;
+	$lightblue: #A8DADC;
+	$midblue: #457B9D;
+	$darkblue: #1D3557;
+	$highlight: #E63946;
+
 	@import "../components/hexagon.scss";
-	$hex_spacing: 0.5;
+	$hex_spacing: 0.125	;
 
 
-	.content__wrapper, .hex_container {
-		background: #005784;
+	.hex_container {
+		background: $lightblue;
+	}
+
+	.hexagon {
+		background: $offwhite;
 	}
 
 	.hexagon__inner {
-		background: #EB8931;
+		background: $lightblue;
 	}
 
 	.hexagon:hover, .hexagon__inner:hover {
-		background: #F7E26B;
+		background: $offwhite;
 	}
 
 	// TODO find a better way to do this...
@@ -30,8 +40,22 @@
 
 	  .hexagon {
 	    // The x offset of each hex
-	    margin-left: $hex_width * $hex_spacing;  
+	    margin-left: $hex_width * $hex_spacing;
 	  }
+	}
+
+	.content__wrapper {
+		border: none;
+		color: $offwhite;
+		background: $midblue;
+
+		.hexagon {
+			background: #ffa02e;
+		}
+
+		.hexagon:hover {
+			background: $offwhite;
+		}
 	}
 }
 
