@@ -7,10 +7,6 @@ import '../styles/blog.scss'
 
 export default ({ data }) => (
 	<Layout class='blog-page' header='Blog' subheader='~/blog/'>
-
-		<Link to='/'>Home</Link>
-		<Link to='/projects'>Projects</Link>
-
 		<h1>Blog Entries</h1>
 
 		{data.allMarkdownRemark.edges.map(({ node }) => (
