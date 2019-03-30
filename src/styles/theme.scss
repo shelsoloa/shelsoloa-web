@@ -1,37 +1,31 @@
 $content-margin: 20vw;
 
-// $background-color: #FF3646;
-// $background-color: #6DA06F;
-$background-color: #073B4C;
-
 body {
-	background-color: $background-color;
+	background-color: #292929;
 	color: white;
+}
+
+.page {
+	height: 100vh;
 }
 
 content {
 	align-items: center;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+
+	float: right;
 
 	min-height: 100vh;
 
 	pointer-events: none; // so this can be full width but not swallow hover
 	position: relative;
 
+	width: 55%;
+
 	.content__wrapper {
-		margin-top: 5%;
 		pointer-events: all;
 
 		padding: 1rem;
-		height: 50%;
-
-		background-color: #073B4C;
-		border: 3px dashed #FF8C00;
-
-		width: 60vw;
-		min-height: 30vh;
+		min-height: 100vh;
 	}
 
 	.content__header {
@@ -48,23 +42,52 @@ content {
 	}
 }
 
-nav {
+.sidebar {
 
-	background-color: black;
 	display: flex;
-	justify-content: space-evenly;
+	flex-align: center;
+	float: left;
+	pointer-events: none;
+	position: relative;
+	width: 45%;
 
-	a { 
+
+	nav {
+		$nav-size: 480px;
+
+
+		border-radius: 50%;
 		display: block;
-		color: inherit;
-		// width: 33%;
-		text-align: center;
-		padding-left: 1rem;
-		padding-right: 1rem;
-		text-decoration: none;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 10%;
+		height: $nav-size;
+		width: $nav-size;
+
+		* {
+			pointer-events: all;
+		}
+
+		.pic {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			height: 40%;
+			width: 40%;
+		}
+
+		a { 
+			display: block;
+			color: inherit;
+			padding-left: 1rem;
+			padding-right: 1rem;
+			text-align: center;
+			text-decoration: none;
+		}
+
+		a:hover {
+			background-color: #FF8C00;
+		}
 	}
 
-	a:hover {
-		background-color: #FF8C00;
-	}
 }

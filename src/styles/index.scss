@@ -1,5 +1,16 @@
 .index-page {
 
+	background-color: #073B4C;
+
+	.content__wrapper {
+		background-color: #073B4C;
+		border-left: 3px dashed #FF8C00;
+	}
+
+	nav {
+		background-color: #073B4C;
+	}
+
 	@import "../components/hexagon.scss";
 
 	// TODO find a better way to do this...
