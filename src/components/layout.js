@@ -1,5 +1,6 @@
 import React from "react"
 
+import { FaEllipsisH, FaGithub, FaTwitter } from "react-icons/fa"
 import { Link } from "gatsby"
 
 import PageTransition from "gatsby-plugin-page-transitions";
@@ -19,6 +20,11 @@ export default props => (
 							<Link to='/'><h1>Shel<br/>Soloa</h1></Link>
 						</div>
 						<div class='nav__subheader'><p>developer</p></div>
+						<ul class='nav__social'>
+							<li><a href='http://twitter.com/_shellbot_'><FaTwitter/></a></li>
+							<li><a href='http://github.com/shelsoloa'><FaGithub/></a></li>
+							<li><Link to='/about#links'><FaEllipsisH/></Link></li>
+						</ul>
 
 						<ul class='nav__links'>
 							<li><Link to='/'>Home</Link></li>
