@@ -1,5 +1,3 @@
-$content-margin: 20vw;
-
 body {
 	background-color: #292929;
 	color: white;
@@ -10,8 +8,6 @@ body {
 }
 
 content {
-	align-items: center;
-
 	float: right;
 
 	min-height: 100vh;
@@ -19,7 +15,7 @@ content {
 	pointer-events: none; // so this can be full width but not swallow hover
 	position: relative;
 
-	width: 55%;
+	width: 60%;
 
 	.content__wrapper {
 		pointer-events: all;
@@ -43,51 +39,93 @@ content {
 }
 
 .sidebar {
-
 	display: flex;
-	flex-align: center;
+	flex-direction: column;
+	justify-content: center;
+
 	float: left;
 	pointer-events: none;
 	position: relative;
-	width: 45%;
+	height: 100%;
+	width: 40%;
 
 
 	nav {
-		$nav-size: 480px;
+		// TODO add media queries to adjust nav size
+		$nav-size: 420px;
 
+	    background-attachment: absolute;
+		background-image: url("https://pbs.twimg.com/profile_images/735807070163865600/pRoqJBXP_400x400.jpg");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
 
 		border-radius: 50%;
+		box-shadow: 0 0 20px #0008;
 		display: block;
+		height: $nav-size;
 		margin-left: auto;
 		margin-right: auto;
-		padding: 10%;
-		height: $nav-size;
+		overflow: hidden;
+		position: relative;
 		width: $nav-size;
 
 		* {
 			pointer-events: all;
 		}
 
-		.pic {
+		.nav__split {
+			background: #000C;
+			float: right;
+			height: 100%;
+			padding-top: 20%;
+			width: 50%;
+		}
+
+		.nav__header, .nav__links {
+			a { 
+				color: inherit;
+				display: block;
+				font-style: italic;
+				padding-left: 1rem;
+				text-decoration: none;
+				transition: all 200ms ease-out;
+			}
+			a:hover {
+				background-color: #FF8C00;
+			}
+		}
+
+		.nav__header {
 			display: block;
 			margin-left: auto;
 			margin-right: auto;
-			height: 40%;
-			width: 40%;
+			width: 100%;
+
+			h1 {
+				font-family: 'Damion';
+				margin: 0;
+			}
 		}
 
-		a { 
-			display: block;
-			color: inherit;
+		.nav__subheader {
+			color: orange;
 			padding-left: 1rem;
-			padding-right: 1rem;
-			text-align: center;
-			text-decoration: none;
 		}
 
-		a:hover {
-			background-color: #FF8C00;
+		.nav__links {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+
+			a:hover {
+				padding-left: 1.5rem;
+				font-weight: bold;
+			}
+
+			li {
+				margin: 0;
+			}
 		}
 	}
-
 }

@@ -10,18 +10,23 @@ import { HexBackground } from "./hexagon"
 export default props => (
 	<PageTransition>
 		<div class={'page ' + props.class}>
-			<HexBackground rows={15} columns={20}/>
+			<HexBackground rows={12} columns={8}/>
 
 			<div class='sidebar'>
 				<nav>
-					<img class='pic' src="https://placeimg.com/300/300/any"/>
+					<div class='nav__split'>
+						<div class='nav__header'>
+							<Link to='/'><h1>Shel<br/>Soloa</h1></Link>
+						</div>
+						<div class='nav__subheader'><p>developer</p></div>
 
-						{/* Navigation Links */}
-						<ul class='navigation-links'>
+						<ul class='nav__links'>
 							<li><Link to='/'>Home</Link></li>
 							<li><Link to='/projects'>Projects</Link></li>
 							<li><Link to='/blog'>Blog</Link></li>
+							<li><Link to='/about'>About</Link></li>
 						</ul>
+					</div>
 				</nav>
 			</div>
 
