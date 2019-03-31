@@ -5,13 +5,13 @@ import Layout from "../components/layout"
 
 import '../styles/index.scss'
 
-import GDI_logo from '../data/img_GDI__logo.png'
-import logo_transparent from '../data/img_shelsoloa__logo--transparent.png'
+import GDI_logo from '../data/img/img_GDI__logo.png'
+import logo_transparent from '../data/img/img_shelsoloa__logo--transparent.png'
 
 
 export default ({data}) => (
 	<Layout class='index-page' header='' subheader=''>
-		<img class='logo' alt="It's Shel Soloa" description='My personal logo' src={logo_fitted}/>
+		<img class='logo' alt="It's Shel Soloa" description='My personal logo' src={logo_transparent}/>
 		<h1 class='wordmark'>ShelSoloa</h1>
 		<blockquote>Booking is currently CLOSED<br/>Availability opening in May</blockquote>
 
