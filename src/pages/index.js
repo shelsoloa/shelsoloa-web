@@ -5,10 +5,13 @@ import Layout from "../components/layout"
 
 import '../styles/index.scss'
 
+import GDI_logo from '../data/img_GDI__logo.png'
+import logo_transparent from '../data/img_shelsoloa__logo--transparent.png'
+
 
 export default ({data}) => (
 	<Layout class='index-page' header='' subheader=''>
-		<img class='logo' alt="It's Shel Soloa" description='My personal logo'/>
+		<img class='logo' alt="It's Shel Soloa" description='My personal logo' src={logo_fitted}/>
 		<h1 class='wordmark'>ShelSoloa</h1>
 		<blockquote>Booking is currently CLOSED<br/>Availability opening in May</blockquote>
 
@@ -21,13 +24,13 @@ export default ({data}) => (
 		<h1>Featured Projects</h1>
 		<div class='featured-projects'>
 			<div class='project-preview'>
-				<img class='preview__image' alt='gamedevinspo logo'/>
+				<img class='preview__image' alt='gamedevinspo logo' src={GDI_logo}/>
 				<h4 class='preview__title'>GameDevInspo</h4>
 				<hr/>
 				<p class='preview__description'>GDI is a content curation blog ran by shel.</p>
 			</div>
 			<div class='project-preview'>
-				<img class='preview__image' alt='gamedevinspo logo'/>
+				<img class='preview__image' alt='gamedevinspo logo' src={GDI_logo}/>
 				<h4 class='preview__title'>GameDevInspo</h4>
 				<hr/>
 				<p class='preview__description'>GDI is a content curation blog ran by shel.</p>
