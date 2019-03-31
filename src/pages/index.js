@@ -1,4 +1,5 @@
 import React from "react"
+import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 
@@ -13,28 +14,72 @@ export default ({data}) => (
 
 		<p>This is the development journal of Sheldon Soloa.<br/>Here you can get an overview of my projects, writing, and the occasional update.</p>
 
+		<br/>
 		<hr/>
+		<br/>
 
-		<h2>Featured Projects</h2>
+		<h1>Featured Projects</h1>
 		<div class='featured-projects'>
-			<div class='preview'>
+			<div class='project-preview'>
 				<img class='preview__image' alt='gamedevinspo logo'/>
 				<h4 class='preview__title'>GameDevInspo</h4>
 				<hr/>
 				<p class='preview__description'>GDI is a content curation blog ran by shel.</p>
 			</div>
-			<div class='preview'>
+			<div class='project-preview'>
 				<img class='preview__image' alt='gamedevinspo logo'/>
 				<h4 class='preview__title'>GameDevInspo</h4>
 				<hr/>
 				<p class='preview__description'>GDI is a content curation blog ran by shel.</p>
 			</div>
-			<div class='preview'>
+			<div class='project-preview'>
 				<img class='preview__image' alt='gamedevinspo logo'/>
 				<h4 class='preview__title'>GameDevInspo</h4>
 				<hr/>
 				<p class='preview__description'>GDI is a content curation blog ran by shel.</p>
 			</div>
 		</div>
+
+		<br/>
+		<br/>
+		<hr/>
+		<br/>
+
+		<h1>Latest Posts</h1>
+		<div class='latest-posts'>
+			{data.allMarkdownRemark.edges.map(({ node }) => (
+				<div class='post-preview' key={node.id}>
+					<Link to={node.fields.slug}>
+						<h4><span class='highlight'>{node.frontmatter.title}</span> {node.frontmatter.date}</h4>
+						<p>{ node.excerpt }</p>
+					</Link>
+				</div>
+			))}
+		</div>
+
+		<hr/>
 	</Layout>
 )
+
+
+export const query = graphql`
+	{
+		allMarkdownRemark(
+			sort: { order: DESC, fields: [frontmatter___date] }
+			limit: 4
+		) {
+			edges {
+				node {
+					excerpt
+					fields {
+						slug
+					}
+					frontmatter {
+						title
+						date(formatString: "YYYY")
+					}
+				}
+			}
+		}
+	}
+`

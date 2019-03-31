@@ -1,6 +1,8 @@
 .index-page {
 
 	$background-color: #073B4C;
+	// $background-color: #0096CC;
+	$highlight-color: orange;	
 
 	background-color: $background-color;
 
@@ -26,7 +28,7 @@
 
 	blockquote {
 		background-color: #0002;
-		border: 3px orange dashed;
+		border: 3px $highlight-color dashed;
 		font-style: italic;
 		padding: 1rem;
 		text-align: center;
@@ -37,9 +39,9 @@
 		justify-content: space-between;
 	}
 
-	.preview {
+	.project-preview {
 		background-color: #0001;
-		border: 2px orange solid;
+		border: 2px $highlight-color solid;
 		box-shadow: 0 0 8px #0008;
 		border-radius: 5%;
 		display: inline-block;
@@ -67,6 +69,46 @@
 		.preview__description {
 			margin: 0.5rem;
 			padding: 0;
+		}
+	}
+
+	.latest-posts {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	.post-preview {
+		// border-radius: 5%;
+		border-left: 2px $highlight-color solid;
+		// border-top: 2px $highlight-color solid;
+		
+		padding-left: 0.5rem;
+		margin-bottom: 2rem;
+		width: 45%;
+
+		a {
+			color: inherit;
+			text-decoration: none;
+
+			h4 {
+				font-weight: normal;
+				margin-bottom: 0.75rem;
+			}
+
+			.highlight {
+				color: $highlight-color;
+				font-weight: bold;
+			}
+
+			:hover {
+				color: orange;
+			}
+		}
+
+		p {
+			margin: 0;
+			color: black;
 		}
 	}
 
