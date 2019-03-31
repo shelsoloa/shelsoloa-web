@@ -1,9 +1,80 @@
 .index-page {
 
-	background-color: #073B4C;
+	$background-color: #073B4C;
+
+	background-color: $background-color;
 
 	content {
-		background-color: #073B4C;
+		background-color: $background-color;
+	}
+
+	.logo {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+
+	.wordmark {
+		display: block;
+		font-family: 'Damion', 'Inconsolata', monospace;
+		font-size: 3rem;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+
+	blockquote {
+		background-color: #0002;
+		border: 3px orange dashed;
+		font-style: italic;
+		padding: 1rem;
+		text-align: center;
+	}
+
+	.featured-projects {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.preview {
+		background-color: #0001;
+		border: 2px orange solid;
+		box-shadow: 0 0 8px #0008;
+		border-radius: 5%;
+		display: inline-block;
+		overflow: hidden;
+		width: 30%;
+
+		img {
+			// TODO force 1:1 aspect ratio
+			background-color: black;
+			height: 200px;
+			margin: 0;
+			width: 100%;
+		}
+
+		hr {
+			margin: 0;
+		}
+
+		.preview__title {
+			margin: 0.5rem;
+			padding: 0;
+			text-align: center;
+		}
+
+		.preview__description {
+			margin: 0.5rem;
+			padding: 0;
+		}
+	}
+
+	// tweak hex
+	@import "../components/hexagon.scss";
+
+	.hex_container {
+		background-color: $background-color;
 	}
 }
 
