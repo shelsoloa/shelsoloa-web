@@ -109,28 +109,28 @@
 		margin-bottom: 2rem;
 		width: 45%;
 
-		a {
-			color: inherit;
-			text-decoration: none;
+		color: inherit;
+		text-decoration: none;
 
-			h4 {
-				font-weight: normal;
-				margin-bottom: 0.75rem;
-			}
-
-			.highlight {
-				color: $highlight-color;
-				font-weight: bold;
-			}
-
-			:hover {
-				color: orange;
-			}
+		h4 {
+			font-weight: normal;
+			margin-bottom: 0.75rem;
 		}
 
 		p {
 			margin: 0;
 		}
+
+		.highlight {
+			color: $highlight-color;
+			font-weight: bold;
+		}
+
+		transition: all 200ms;
+	}
+	.post-preview:hover {
+		background-color: #FFF1;
+		border-left: 10px $highlight-color solid;
 	}
 
 	// tweak hex

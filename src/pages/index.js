@@ -48,12 +48,10 @@ export default ({data}) => (
 		<h1>Latest Posts</h1>
 		<div class='latest-posts'>
 			{data.allMarkdownRemark.edges.map(({ node }) => (
-				<div class='post-preview' key={node.id}>
-					<Link to={node.fields.slug}>
-						<h4><span class='highlight'>{node.frontmatter.title}</span> {node.frontmatter.date}</h4>
-						<p>{ node.excerpt }</p>
-					</Link>
-				</div>
+				<Link className='post-preview' to={node.fields.slug}>
+					<h4><span class='highlight'>{node.frontmatter.title}</span> {node.frontmatter.date}</h4>
+					<p>{ node.excerpt }</p>
+				</Link>
 			))}
 		</div>
 
