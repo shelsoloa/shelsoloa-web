@@ -48,13 +48,16 @@
 		border-radius: 5%;
 		display: inline-block;
 		overflow: hidden;
+		padding-bottom: 1rem;
 		width: 30%;
 
 		img {
 			// TODO force 1:1 aspect ratio
 			background-color: black;
+			display: block;
 			height: 200px;
 			margin: 0;
+			margin-bottom: 1rem;
 			width: 100%;
 		}
 
@@ -62,15 +65,22 @@
 			margin: 0;
 		}
 
+		.preview__description, .preview__title {
+			padding-left: 1rem;
+			padding-right: 1rem;
+		}
+
 		.preview__title {
-			margin: 0.5rem;
+			margin: 0;
 			padding: 0;
 			text-align: center;
 		}
 
 		.preview__description {
-			margin: 0.5rem;
+			font-size: 0.8rem;
+			margin: 0;
 			padding: 0;
+			text-align: center;
 		}
 	}
 

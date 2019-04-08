@@ -25,20 +25,17 @@ export default ({data}) => (
 		<div class='featured-projects'>
 			<div class='project-preview'>
 				<img class='preview__image' alt='gamedevinspo logo' src={GDI_logo}/>
-				<h4 class='preview__title'>GameDevInspo</h4>
-				<hr/>
+				<h3 class='preview__title'>GameDevInspo</h3>
 				<p class='preview__description'>GDI is a content curation blog ran by shel.</p>
 			</div>
 			<div class='project-preview'>
 				<img class='preview__image' alt='gamedevinspo logo' src={GDI_logo}/>
-				<h4 class='preview__title'>GameDevInspo</h4>
-				<hr/>
+				<h3 class='preview__title'>GameDevInspo</h3>
 				<p class='preview__description'>GDI is a content curation blog ran by shel.</p>
 			</div>
 			<div class='project-preview'>
 				<img class='preview__image' alt='gamedevinspo logo'/>
-				<h4 class='preview__title'>GameDevInspo</h4>
-				<hr/>
+				<h3 class='preview__title'>GameDevInspo</h3>
 				<p class='preview__description'>GDI is a content curation blog ran by shel.</p>
 			</div>
 		</div>
