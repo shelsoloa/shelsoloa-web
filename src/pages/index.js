@@ -2,6 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
+import MoreButton from "../components/more-button"
 
 import '../styles/index.scss'
 
@@ -39,6 +40,8 @@ export default ({data}) => (
 				<p class='preview__description'>GDI is a content curation blog ran by shel.</p>
 			</Link>
 		</div>
+		<br/>
+		<MoreButton to='/projects'/>
 
 		<br/>
 		<br/>
@@ -54,8 +57,12 @@ export default ({data}) => (
 				</Link>
 			))}
 		</div>
+		<MoreButton to='/blog'/>
 
+		<br/>
+		<br/>
 		<hr/>
+		<br/>
 	</Layout>
 )
 
