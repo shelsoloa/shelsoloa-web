@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import MoreButton from "../components/more-button"
+import { ProjectPreview, ProjectsSection } from "../components/project-components"
 
 import '../styles/index.scss'
 
@@ -23,23 +24,29 @@ export default ({data}) => (
 		<br/>
 
 		<h1>Featured Projects</h1>
-		<div class='featured-projects'>
-			<a className='project-preview' href='http://gamedevinspo.com'>
-				<img class='preview__image' alt='gamedevinspo logo' src={GDI_logo}/>
-				<h3 class='preview__title'>GameDevInspo</h3>
-				<p class='preview__description'>GDI is a content curation blog ran by shel.</p>
-			</a>
-			<Link className='project-preview' to='/'>
-				<img class='preview__image' alt='gamedevinspo logo' src={GDI_logo}/>
-				<h3 class='preview__title'>GameDevInspo</h3>
-				<p class='preview__description'>GDI is a content curation blog ran by shel.</p>
-			</Link>
-			<Link className='project-preview' to='/'>
-				<img class='preview__image' alt='gamedevinspo logo'/>
-				<h3 class='preview__title'>GameDevInspo</h3>
-				<p class='preview__description'>GDI is a content curation blog ran by shel.</p>
-			</Link>
-		</div>
+		<ProjectsSection class='featured-projects'>
+			<ProjectPreview
+				title='GameDevInspo'
+				image={GDI_logo}
+				image_alt='gamedevinspo logo'
+				description='GDI is a content curation blog ran by shel.'
+				to='/'
+			/>
+			<ProjectPreview
+				title='GameDevInspo'
+				image={GDI_logo}
+				image_alt='gamedevinspo logo'
+				description='GDI is a content curation blog ran by shel.'
+				to='/'
+			/>
+			<ProjectPreview
+				title='GameDevInspo'
+				image={GDI_logo}
+				image_alt='gamedevinspo logo'
+				description='GDI is a content curation blog ran by shel.'
+				to='/'
+			/>
+		</ProjectsSection>
 		<br/>
 		<MoreButton to='/projects'/>
 

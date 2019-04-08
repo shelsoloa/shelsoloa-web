@@ -1,0 +1,57 @@
+.projects-section {
+	display: flex;
+	justify-content: space-between;
+}
+
+.project-preview {
+	background-color: #0001;
+	border: 2px orange solid;
+	box-shadow: 0 0 8px #0008;
+	border-radius: 5%;
+	color: inherit;
+	display: inline-block;
+	overflow: hidden;
+	padding-bottom: 1rem;
+	text-decoration: none;
+	width: 30%;
+
+	transition: all 150ms;
+
+	img {
+		// TODO force 1:1 aspect ratio
+		background-color: black;
+		display: block;
+		height: 200px;
+		margin: 0;
+		margin-bottom: 1rem;
+		width: 100%;
+	}
+
+	hr {
+		margin: 0;
+	}
+
+	.preview__description, .preview__title {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+
+	.preview__title {
+		margin: 0;
+		padding: 0;
+		text-align: center;
+	}
+
+	.preview__description {
+		font-size: 0.8rem;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+	}
+}
+
+.project-preview:hover {
+	background-color: #FFF1;
+	box-shadow: 0 0 8px #FFF1;
+	transform: scale(1.05);
+}
