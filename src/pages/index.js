@@ -25,27 +25,15 @@ export default ({data}) => (
 
 		<h1>Featured Projects</h1>
 		<ProjectsSection class='featured-projects'>
-			<ProjectPreview
-				title='GameDevInspo'
-				image={GDI_logo}
-				image_alt='gamedevinspo logo'
-				description='GDI is a content curation blog ran by shel.'
-				to='/'
-			/>
-			<ProjectPreview
-				title='GameDevInspo'
-				image={GDI_logo}
-				image_alt='gamedevinspo logo'
-				description='GDI is a content curation blog ran by shel.'
-				to='/'
-			/>
-			<ProjectPreview
-				title='GameDevInspo'
-				image={GDI_logo}
-				image_alt='gamedevinspo logo'
-				description='GDI is a content curation blog ran by shel.'
-				to='/'
-			/>
+			{data.featuredProjects.edges.map(({ node }) => (
+				<ProjectPreview
+					title={node.frontmatter.title}
+					description={node.frontmatter.description}
+					image={node.frontmatter.preview_image.publicURL}
+					image_alt={node.frontmatter.title + ' preview'}
+					to={node.fields.slug}
+				/>
+			))}
 		</ProjectsSection>
 		<br/>
 		<MoreButton to='/projects'/>
@@ -57,7 +45,7 @@ export default ({data}) => (
 
 		<h1>Latest Posts</h1>
 		<div class='latest-posts'>
-			{data.allMarkdownRemark.edges.map(({ node }) => (
+			{data.recentBlogPosts.edges.map(({ node }) => (
 				<Link className='post-preview' to={node.fields.slug}>
 					<h4><span class='highlight'>{node.frontmatter.title}</span> {node.frontmatter.date}</h4>
 					<p>{ node.excerpt }</p>
@@ -75,8 +63,29 @@ export default ({data}) => (
 
 
 export const query = graphql`
-	{
-		allMarkdownRemark(
+	query IndexQuery {
+		featuredProjects: allMarkdownRemark(
+			filter: {frontmatter: {tags: {in: "featured"}}}
+		) {
+			edges {
+				node {
+					excerpt
+					fields {
+						slug
+					}
+					frontmatter {
+						title
+						description
+						preview_image {
+							publicURL
+						}
+						tags
+					}
+				}
+			}
+		}
+
+		recentBlogPosts: allMarkdownRemark(
 		    filter: { fileAbsolutePath: {regex: "/pages\/blog/"} }
 			sort: { order: DESC, fields: [frontmatter___date] }
 			limit: 4
