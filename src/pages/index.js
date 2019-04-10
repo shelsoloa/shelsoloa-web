@@ -7,7 +7,6 @@ import { ProjectPreview, ProjectsSection } from "../components/project-component
 
 import '../styles/index.scss'
 
-import GDI_logo from '../data/img/img_GDI__logo.png'
 import logo_transparent from '../data/img/img_shelsoloa__logo--transparent.png'
 
 
@@ -28,9 +27,9 @@ export default ({data}) => (
 			{data.featuredProjects.edges.map(({ node }) => (
 				<ProjectPreview
 					title={node.frontmatter.title}
-					description={node.frontmatter.description}
+					description={node.frontmatter.subtitle}
 					image={node.frontmatter.preview_image.publicURL}
-					image_alt={node.frontmatter.title + ' preview'}
+					image_alt={node.frontmatter.title + ' preview image'}
 					to={node.fields.slug}
 				/>
 			))}
@@ -69,13 +68,12 @@ export const query = graphql`
 		) {
 			edges {
 				node {
-					excerpt
 					fields {
 						slug
 					}
 					frontmatter {
 						title
-						description
+						subtitle
 						preview_image {
 							publicURL
 						}

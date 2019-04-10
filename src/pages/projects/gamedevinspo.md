@@ -1,8 +1,8 @@
 ---
 title: GameDevInspo
-date: 2021-01-01
-description: "A blog that shows off awesome gamedev content to gamedevs"
+subtitle: "A blog that shows off awesome gamedev content to gamedevs"
 preview_image: "../../data/img/img_GDI__logo.png"
+date: 2021-01-01
 tags: ["featured", "archived"]
 ---
 
