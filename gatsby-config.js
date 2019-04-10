@@ -4,6 +4,7 @@ module.exports = {
 	},
 	plugins: [
 		`gatsby-plugin-sass`,
+		`gatsby-plugin-sharp`,
 		{
 			resolve: `gatsby-source-filesystem`,
 			options: {
@@ -11,7 +12,19 @@ module.exports = {
 				path: `${__dirname}/src/`,
 			}
 		},
-		`gatsby-transformer-remark`,
+		{
+			resolve: `gatsby-transformer-remark`,
+			options: {
+				plugins: [
+					{
+						resolve: `gatsby-remark-images`,
+						options: {
+							maxWidth: 960,
+						}
+					}
+				]
+			}
+		},
 		`gatsby-plugin-emotion`,
 		{
 			resolve: `gatsby-plugin-page-transitions`,
