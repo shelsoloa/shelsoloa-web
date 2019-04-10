@@ -8,7 +8,7 @@ import '../styles/projects.scss';
 
 
 export default ({data}) => (
-	<Layout class='projects-page' header='Projects' subheader='~/projects/'>
+	<Layout class='projects-page' header='Projects' subheader="noteworthy projects developed throughout the years">
 	
 		<ProjectsSection>
 			{data.allMarkdownRemark.edges.map(({ node }) => (

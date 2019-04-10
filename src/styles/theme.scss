@@ -1,4 +1,23 @@
+@import 'colors.scss';
+
 body {
-	background-color: #292929;
+	background-color: $bg-color;
+	color: $text-color;
+}
+
+a {
+	color: $highlight-color_1;
+	text-decoration: none;
+}
+
+a:hover {
 	color: white;
+}
+
+.center {
+	text-align: center;
+}
+
+.highlight {
+	color: $highlight-color_1;
 }

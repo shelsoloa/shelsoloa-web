@@ -1,14 +1,7 @@
+@import 'colors.scss';
+
+
 .index-page {
-
-	$background-color: #073B4C;
-	// $background-color: #0096CC;
-	$highlight-color: orange;	
-
-	background-color: $background-color;
-
-	content {
-		background-color: $background-color;
-	}
 
 	.logo {
 		display: block;
@@ -19,18 +12,22 @@
 		height: 10rem;
 	}
 
-	.wordmark {
+	.header {
 		display: block;
 		font-family: 'Damion', 'Inconsolata', monospace;
 		font-size: 3rem;
 		margin-left: auto;
 		margin-right: auto;
-		text-align: center;
+		margin-bottom: 0;
+	}
+	.subheader {
+
 	}
 
 	blockquote {
 		background-color: #0002;
-		border: 3px $highlight-color dashed;
+		border: 3px $highlight-color_1 dashed;
+		border-radius: 10px;
 		font-style: italic;
 		padding: 1rem;
 		text-align: center;
@@ -40,10 +37,14 @@
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
+		.highlight {
+			color: $highlight-color_2;
+		}
 	}
 
 	.post-preview {
-		border-left: 2px $highlight-color solid;
+
+		border-left: 2px $highlight-color_2 solid;
 		
 		padding-left: 0.5rem;
 		margin-bottom: 2rem;
@@ -62,7 +63,6 @@
 		}
 
 		.highlight {
-			color: $highlight-color;
 			font-weight: bold;
 		}
 
@@ -70,14 +70,7 @@
 	}
 	.post-preview:hover {
 		background-color: #FFF1;
-		border-left: 5px $highlight-color solid;
-	}
-
-	// tweak hex
-	@import "../components/hexagon.scss";
-
-	.hex_container {
-		background-color: $background-color;
+		border-left: 5px $highlight-color_2 solid;
 	}
 }
 

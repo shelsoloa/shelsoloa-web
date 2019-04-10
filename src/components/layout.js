@@ -10,26 +10,29 @@ import './layout.scss'
 
 export default props => (
 	<div class={'page ' + props.class}>
-		<HexBackground rows={12} columns={8}/>
+		<HexBackground rows={12} columns={6}/>
+
+		<div class='topbar'></div>
+		<div class='bottombar'></div>
 
 		<div class='sidebar'>
 			<nav>
 				<div class='nav__split'>
 					<div class='nav__header'>
-						<Link to='/'><h1>Shel<br/>Soloa</h1></Link>
+						<Link to='/'><h1>Shel<br/>&nbsp;&nbsp;Soloa</h1></Link>
 					</div>
-					<div class='nav__subheader'><p>developer</p></div>
-					<ul class='nav__social'>
-						<li><a href='http://twitter.com/_shellbot_'><FaTwitter/></a></li>
-						<li><a href='http://github.com/shelsoloa'><FaGithub/></a></li>
-						<li><Link to='/about#links'><FaEllipsisH/></Link></li>
-					</ul>
 
 					<ul class='nav__links'>
 						<li><Link to='/'>Home</Link></li>
 						<li><Link to='/projects'>Projects</Link></li>
 						<li><Link to='/blog'>Blog</Link></li>
 						<li><Link to='/about'>About</Link></li>
+					</ul>
+
+					<ul class='nav__social'>
+						<li><a href='http://twitter.com/_shellbot_'><FaTwitter/></a></li>
+						<li><a href='http://github.com/shelsoloa'><FaGithub/></a></li>
+						<li><Link to='/about#links'><FaEllipsisH/></Link></li>
 					</ul>
 				</div>
 			</nav>

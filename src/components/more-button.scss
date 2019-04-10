@@ -1,6 +1,8 @@
+@import '../styles/colors.scss';
+
 .more-button {
 	border-radius: 5%;
-	color: orange;
+	color: $highlight-color_1;
 	display: block;
 	line-height: 0;
 	padding: 0.25rem;

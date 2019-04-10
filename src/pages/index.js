@@ -13,16 +13,15 @@ import logo_transparent from '../data/img/img_shelsoloa__logo--transparent.png'
 export default ({data}) => (
 	<Layout class='index-page' header='' subheader=''>
 		<img class='logo' alt="It's Shel Soloa" description='My personal logo' src={logo_transparent}/>
-		<h1 class='wordmark'>ShelSoloa</h1>
+		<h1 class='header center'>ShelSoloa</h1>
+		<p class='subheader center highlight'>The development journal of Shel Soloa</p>
 		<blockquote>Booking is currently CLOSED<br/>Availability opening in May</blockquote>
-
-		<p>This is the development journal of Sheldon Soloa.<br/>Here you can get an overview of my projects, writing, and the occasional update.</p>
 
 		<br/>
 		<hr/>
 		<br/>
 
-		<h1>Featured Projects</h1>
+		<h1 class='center'>Featured Projects</h1>
 		<ProjectsSection class='featured-projects'>
 			{data.featuredProjects.edges.map(({ node }) => (
 				<ProjectPreview
@@ -42,7 +41,7 @@ export default ({data}) => (
 		<hr/>
 		<br/>
 
-		<h1>Latest Posts</h1>
+		<h1 class='center'>Latest Posts</h1>
 		<div class='latest-posts'>
 			{data.recentBlogPosts.edges.map(({ node }) => (
 				<Link className='post-preview' to={node.fields.slug}>
@@ -51,7 +50,7 @@ export default ({data}) => (
 				</Link>
 			))}
 		</div>
-		<MoreButton to='/blog'/>
+		<MoreButton style={{color: 'blue'}} to='/blog'/>
 
 		<br/>
 		<br/>

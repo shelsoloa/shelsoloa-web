@@ -6,9 +6,7 @@ import Layout from "../components/layout"
 import '../styles/blog.scss'
 
 export default ({ data }) => (
-	<Layout class='blog-page' header='Blog' subheader='~/blog/'>
-		<h1>Blog Entries</h1>
-
+	<Layout class='blog-page' header='Blog Entries' subheader="updates and writing on programming, development, and other interests">
 		{data.allMarkdownRemark.edges.map(({ node }) => (
 			<div key={node.id}>
 				<Link to={node.fields.slug}>

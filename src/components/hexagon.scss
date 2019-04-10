@@ -1,3 +1,5 @@
+@import '../styles/colors.scss';
+
 $hex_ratio: 0.866;
 $hex_height: 80px;
 $hex_width: $hex_height * $hex_ratio;
@@ -5,23 +7,13 @@ $hex_width: $hex_height * $hex_ratio;
 $hex_spacing: 0.25;
 $hex_bordercolor: inherit;
 
-// color variants
-// $hex_color: #FF8C00;
-// $hex_color: #FFA500;
-$hex_color: #FF3646;
-
-// $hex_highlight: white;
-$hex_highlight: #EF476F;
-
 .hex_container {
   display: block;
 
-  margin-left: -10%;
+  margin-left: -3%;
+  margin-top: -2%;
 
   overflow: hidden;
-
-  width: 110%;
-  height: 100%;
   
   position: fixed;
   left: 0;

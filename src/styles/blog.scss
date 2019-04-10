@@ -1,34 +1,20 @@
+@import 'colors.scss';
+
 .blog-page {
-	@import "../components/hexagon.scss";
-	$hex_spacing: 0.24;
 
-	.content__wrapper, .hex_container {
-		background: #EAE0D5;
+	$lightblue: #A8DADC;
+	$bgcolor: #EAE0D5;
+
+	content {
 	}
 
-	.hexagon__inner {
-		background: #C6AC8F;
-	}
+	.hex_container {
+		.hexagon__inner {
+			background: $highlight-color_2;
+		}
 
-	.hexagon:hover, .hexagon__inner:hover {
-		background: #F7E26B;
-	}
-
-	// TODO find a better way to do this...
-	.hex_container__hex_row {
-	  line-height: 0;
-
-	  // The y offset of each hex
-	  margin-bottom: $hex_width * (-1 / 3) + ($hex_width * $hex_spacing);
-
-	  &:nth-child(2n) {    
-	    // The x offset of each row other row
-	    margin-left: $hex_width / 2 + ($hex_width * $hex_spacing / 2)
-	  }
-
-	  .hexagon {
-	    // The x offset of each hex
-	    margin-left: $hex_width * $hex_spacing;  
-	  }
+		.hexagon:hover, .hexagon__inner:hover {
+			background: #F1FAEE;
+		}
 	}
 }
