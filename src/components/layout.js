@@ -5,6 +5,8 @@ import { Link } from "gatsby"
 
 import { HexBackground } from "./hexagon"
 
+import './layout.scss'
+
 
 export default props => (
 	<div class={'page ' + props.class}>
