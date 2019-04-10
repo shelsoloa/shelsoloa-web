@@ -77,6 +77,7 @@ export default ({data}) => (
 export const query = graphql`
 	{
 		allMarkdownRemark(
+		    filter: { fileAbsolutePath: {regex: "/pages\/blog/"} }
 			sort: { order: DESC, fields: [frontmatter___date] }
 			limit: 4
 		) {

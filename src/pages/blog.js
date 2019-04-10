@@ -22,7 +22,9 @@ export default ({ data }) => (
 
 export const query = graphql`
 	{
-		allMarkdownRemark {
+		allMarkdownRemark (
+		    filter: { fileAbsolutePath: {regex: "/pages\/blog/"} }
+		) {
 			edges {
 				node {
 					excerpt
