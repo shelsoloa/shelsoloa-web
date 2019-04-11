@@ -54,7 +54,6 @@ export default ({data}) => (
 
 		<br/>
 		<br/>
-		<hr/>
 		<br/>
 	</Layout>
 )

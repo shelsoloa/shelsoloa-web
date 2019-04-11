@@ -1,6 +1,6 @@
 import React from "react"
 
-import { FaEllipsisH, FaGithub, FaTwitter } from "react-icons/fa"
+import { FaEllipsisH, FaGithub, FaMedium, FaTumblr, FaTwitter, FaYoutube } from "react-icons/fa"
 import { Link } from "gatsby"
 
 import { HexBackground } from "./hexagon"
@@ -48,5 +48,16 @@ export default props => (
 				</div>
 			</div>
 		</content>
+
+		<div class='footer'>
+			<div class='inner'>
+				<a href='https://twitter.com/_shellbot_'><FaTwitter /></a>
+				<a href='https://github.com/shelsoloa'><FaGithub /></a>
+				<a href='https://medium.com/@shelsoloa'><FaMedium /></a>
+				<a href='https://sshellbot.tumblr.com/'><FaTumblr /></a>
+				<a href='https://youtube.com/channel/UCM2oD1gLLENjmHLNURW8JDg'><FaYoutube /></a>
+				<p>Thanks for checking my stuff out</p>
+			</div>
+		</div>
 	</div>
 )
