@@ -1,6 +1,7 @@
 ---
 title: Placeholder Post
 date: 2019-03-29
+tags: ['tag1', 'tag2', 'tag4', 'tag3']
 ---
 
 This is just a placeholder post. Don't worry about it. Nothing to see here.

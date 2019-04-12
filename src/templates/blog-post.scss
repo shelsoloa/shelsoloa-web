@@ -1,0 +1,46 @@
+@import '../styles/colors';
+
+.post-page {
+
+	.post {
+		.post__title {
+			color: $highlight-color_2;
+			margin-bottom: 0;
+		}
+		.post__date {
+			color: $highlight-color_3;
+			font-style: italic;
+		}
+		.post__tags {
+			color: $highlight-color_3;
+			list-style-type: none;
+			margin: 0;
+			margin-bottom: 1rem;
+
+			li {
+				border: 1px $highlight-color_3 solid;
+				border-radius: 10%;
+				display: inline-block;
+				margin-right: 1rem;
+				padding: 0 0.5rem;
+			}
+
+			a {
+				color: inherit;
+			}
+			a:hover {
+				color: white;
+			}
+		}
+	}
+
+	.hex_container {
+		.hexagon__inner {
+			background: $highlight-color_2;
+		}
+
+		.hexagon:hover, .hexagon__inner:hover {
+			background: $highlight-color_3;
+		}
+	}
+}
