@@ -1,9 +1,10 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import MoreButton from "../components/more-button"
 import { ProjectPreview, ProjectsSection } from "../components/project-components"
+import { PostPreview } from "../components/post-components"
 
 import '../styles/index.scss'
 
@@ -44,10 +45,12 @@ export default ({data}) => (
 		<h1 class='center'>Latest Posts</h1>
 		<div class='latest-posts'>
 			{data.recentBlogPosts.edges.map(({ node }) => (
-				<Link className='post-preview' to={node.fields.slug}>
-					<h4><span class='highlight'>{node.frontmatter.title}</span> {node.frontmatter.date}</h4>
-					<p>{ node.excerpt }</p>
-				</Link>
+				<PostPreview
+					title={node.frontmatter.title}
+					date={node.frontmatter.date}
+					to={node.fields.slug}
+					excerpt={node.excerpt}
+				/>
 			))}
 		</div>
 		<MoreButton style={{color: 'blue'}} to='/blog'/>

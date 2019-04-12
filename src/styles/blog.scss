@@ -1,11 +1,35 @@
-@import 'colors.scss';
+@import 'colors';
 
 .blog-page {
 
-	$lightblue: #A8DADC;
 	$bgcolor: #EAE0D5;
 
-	content {
+	.highlight {
+		color: $highlight-color_3;
+	}
+
+	.post-preview {
+
+		.post__inner {
+			border-left-color: $highlight-color_2;
+		}
+
+		.post__title {
+			color: $highlight-color_2;
+		}
+
+		.post__date {
+			color: $highlight-color_3;
+		}
+	}
+
+	.post-preview:hover {
+		.post__title {
+			color: $highlight-color_3;
+		}
+		.post__inner {
+			border-left-color: $highlight-color_3;
+		}
 	}
 
 	.hex_container {
@@ -14,7 +38,7 @@
 		}
 
 		.hexagon:hover, .hexagon__inner:hover {
-			background: #F1FAEE;
+			background: $highlight-color_3;
 		}
 	}
 }

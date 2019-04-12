@@ -1,0 +1,34 @@
+@import "../styles/colors";
+
+.post-preview {
+	color: inherit;
+	display: inline-block;
+	margin-bottom: 2rem;
+	transition: all 200ms;
+
+	.post__inner {
+		border-left: 2px solid;
+		padding-left: 0.5rem;
+		transition: all 200ms;
+	}
+
+	.post__title {
+		border-left: 1px transparent solid;
+		width: 100%;
+		margin: 0;
+		transition: all 200ms;
+	}
+
+	.post__date {
+		font-style: italic;
+		margin-bottom: 0.5rem;
+	}
+}
+.post-preview:hover {
+	.post__title {
+		border-left: 0.5rem solid;
+	}
+	.post__inner {
+		border-left: 0.5rem solid;
+	}
+}

@@ -1,4 +1,4 @@
-@import 'colors.scss';
+@import 'colors';
 
 
 .index-page {
@@ -20,9 +20,6 @@
 		margin-right: auto;
 		margin-bottom: 0;
 	}
-	.subheader {
-
-	}
 
 	blockquote {
 		background-color: #0002;
@@ -43,34 +40,12 @@
 	}
 
 	.post-preview {
-
-		border-left: 2px $highlight-color_2 solid;
-		
-		padding-left: 0.5rem;
-		margin-bottom: 2rem;
 		width: 45%;
-
-		color: inherit;
-		text-decoration: none;
-
-		h4 {
-			font-weight: normal;
-			margin-bottom: 0.75rem;
+		.post__inner {
+			border-left-color: $highlight-color_2;
+			height: 10rem;
+			overflow-y: hidden;
 		}
-
-		p {
-			margin: 0;
-		}
-
-		.highlight {
-			font-weight: bold;
-		}
-
-		transition: all 200ms;
-	}
-	.post-preview:hover {
-		background-color: #FFF1;
-		border-left: 5px $highlight-color_2 solid;
 	}
 }
 
