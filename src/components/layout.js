@@ -41,7 +41,7 @@ export default props => (
 		<content>
 			<div class='content__wrapper'>
 				<h1 class='content__header'>{props.header}</h1>
-				<p class='content__subheader'>{props.subheader}</p>
+				<p class='highlight content__subheader'>{props.subheader}</p>
 
 				<div class='content__inner'>
 					{props.children}
@@ -51,11 +51,11 @@ export default props => (
 
 		<div class='footer'>
 			<div class='inner'>
-				<a href='https://twitter.com/_shellbot_'><FaTwitter /></a>
-				<a href='https://github.com/shelsoloa'><FaGithub /></a>
-				<a href='https://medium.com/@shelsoloa'><FaMedium /></a>
-				<a href='https://sshellbot.tumblr.com/'><FaTumblr /></a>
-				<a href='https://youtube.com/channel/UCM2oD1gLLENjmHLNURW8JDg'><FaYoutube /></a>
+				<a className='highlight' href='https://twitter.com/_shellbot_'><FaTwitter /></a>
+				<a className='highlight' href='https://github.com/shelsoloa'><FaGithub /></a>
+				<a className='highlight' href='https://medium.com/@shelsoloa'><FaMedium /></a>
+				<a className='highlight' href='https://sshellbot.tumblr.com/'><FaTumblr /></a>
+				<a className='highlight' href='https://youtube.com/channel/UCM2oD1gLLENjmHLNURW8JDg'><FaYoutube /></a>
 				<p>Thanks for checking my stuff out</p>
 			</div>
 		</div>
