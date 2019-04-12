@@ -46,6 +46,9 @@
 			height: 10rem;
 			overflow-y: hidden;
 		}
+		.post__inner:hover {
+			border-left-color: $highlight-color_2;
+		}
 	}
 }
 
