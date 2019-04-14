@@ -2,20 +2,26 @@
 
 $sidebar-width: 35%;
 
-.topbar, .bottombar {
-	position: fixed;
-	left: 0;
-	width: 100%;
-	height: 1.5rem;
-	background-color: black;
-	content: ' ';
-	z-index: 100;
-}
-.topbar {
-	top: 0;
-}
-.bottombar {
-	bottom: 0;
+// Where to break the screen between the small, medium, and large layouts
+$break-small: 600px;
+$break-large: 1080px;
+
+@media screen and (min-width: $break-large) {
+	.topbar, .bottombar {
+		position: fixed;
+		left: 0;
+		width: 100%;
+		height: 1.5rem;
+		background-color: black;
+		content: ' ';
+		z-index: 100;
+	}
+	.topbar {
+		top: 0;
+	}
+	.bottombar {
+		bottom: 0;
+	}	
 }
 
 .page {
@@ -24,23 +30,31 @@ $sidebar-width: 35%;
 
 content {
 	background-color: $bg-color;
-	float: right;
-
-	min-height: 100vh;
 
 	pointer-events: none; // so this can be full width but not swallow hover
 	position: relative;
 
-	width: 100% - $sidebar-width;
+	@media screen and (min-width: $break-large) {
+		float: right;
+		min-height: 100vh;
+		width: 100% - $sidebar-width;
+	}
 
 	.content__wrapper {
+		background-color: $bg-color;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+		padding: 1rem;
 		pointer-events: all;
 
-		padding: 1rem;
-		padding-top: 10%;
-		min-height: 100vh;
+		width: 100%;
 
-		width: 90%;
+		@media screen and (min-width: $break-large) {
+			margin: 0;
+			min-height: 100vh;
+			padding-top: 3rem;
+			width: 90%;
+		}
 	}
 
 	.content__header {
@@ -81,18 +95,20 @@ content {
 }
 
 .sidebar {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-
-	float: left;
 	pointer-events: none;
-	position: fixed;
-	height: 100%;
-	width: $sidebar-width;
+	position: relative;
+
+	@media screen and (min-width: $break-large) {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		float: left;
+		height: 100%;
+		position: fixed;
+		width: $sidebar-width;
+	}	
 
 	nav {
-		// TODO add media queries to adjust nav size
 		$nav-size: 380px;
 		$nav-pad: 1.5rem;
 
@@ -102,13 +118,16 @@ content {
 		background-repeat: no-repeat;
 		background-size: cover;
 
-		border-radius: 10%;
 		box-shadow: 0 0 20px #0008;
-		height: $nav-size;
 		margin-left: auto;
 		margin-right: auto;
 		overflow: hidden;
-		width: $nav-size;
+
+		@media screen and (min-width: $break-large) {
+			border-radius: 10%;
+			height: $nav-size;
+			width: $nav-size;
+		}
 
 		* {
 			pointer-events: all;
@@ -117,14 +136,20 @@ content {
 
 		.nav__split {
 			background: #000C;
-			float: right;
-			height: 100%;
-			padding-top: 15%;
-			width: 45%;
+			padding-top: 1rem;
 			transition: all 200ms;
+
+			@media screen and (min-width: $break-large) {
+				float: right;
+				padding-top: 15%;
+				height: 100%;
+				width: 45%;
+			}
 		}
 		.nav__split:hover {
-			width: 55%;
+			@media screen and (min-width: $break-large) {
+				width: 55%;
+			}
 		}
 
 		.nav__header, .nav__links {
@@ -132,18 +157,38 @@ content {
 				color: inherit;
 				display: block;
 				font-style: italic;
-				padding-left: $nav-pad;
+				text-align: center;
 				text-decoration: none;
 				transition: all 200ms ease-out;
 			}
 			a:hover {
 				background-color: $highlight-color_1;
 			}
+
+			@media screen and (min-width: $break-large) {
+				a { 
+					padding-left: $nav-pad;
+					text-align: left;
+				}
+				a:hover {
+					background-color: $highlight-color_1;
+				}				
+			}
 		}
 
 		.nav__header h1 {
 			font-family: 'Damion';
 			margin-left: -0.2rem;
+
+			.between {
+				display: none;
+			}
+
+			@media screen and (min-width: $break-large) {
+				.between {
+					display: inline;
+				}
+			}
 		}
 
 		.nav__subheader {
@@ -180,11 +225,12 @@ content {
 
 		.nav__links {
 			list-style-type: none;
-			margin-top: 1rem;
 
 			a:hover {
-				padding-left: 2rem;
 				font-weight: bold;
+				@media screen and (min-width: $break-large) {
+					padding-left: 2rem;
+				}
 			}
 
 			li {

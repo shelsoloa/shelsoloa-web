@@ -19,7 +19,7 @@ export default props => (
 			<nav>
 				<div class='nav__split'>
 					<div class='nav__header'>
-						<Link to='/'><h1>Shel<br/>&nbsp;&nbsp;Soloa</h1></Link>
+						<Link to='/'><h1>Shel<span class='between'><br/>&nbsp;&nbsp;</span>Soloa</h1></Link>
 					</div>
 
 					<ul class='nav__links'>
