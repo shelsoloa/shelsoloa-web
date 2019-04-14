@@ -1,0 +1,20 @@
+@import "colors";
+
+
+@mixin bp($point) {
+
+	$break-small: "$(max-width: 600px)";
+	$break-mid: "(min-width: 600px)";
+	$break-large: "(min-width: 1080px)";
+
+	@if $point == small {
+		@media #{$break-small} { @content; }
+	}
+	@else if $point == med {
+		@media #{$break-mid} { @content; }
+	}
+	@else if $point == large {
+		@media #{$break-large}  { @content; }
+	}
+
+}

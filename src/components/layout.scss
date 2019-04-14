@@ -1,12 +1,10 @@
-@import '../styles/colors.scss';
+@import '../styles/master';
+
 
 $sidebar-width: 35%;
 
-// Where to break the screen between the small, medium, and large layouts
-$break-small: 600px;
-$break-large: 1080px;
 
-@media screen and (min-width: $break-large) {
+@include bp(large) {
 	.topbar, .bottombar {
 		position: fixed;
 		left: 0;
@@ -34,7 +32,7 @@ content {
 	pointer-events: none; // so this can be full width but not swallow hover
 	position: relative;
 
-	@media screen and (min-width: $break-large) {
+	@include bp(large) {
 		float: right;
 		min-height: 100vh;
 		width: 100% - $sidebar-width;
@@ -49,7 +47,7 @@ content {
 
 		width: 100%;
 
-		@media screen and (min-width: $break-large) {
+		@include bp(large) {
 			margin: 0;
 			min-height: 100vh;
 			padding-top: 3rem;
@@ -98,7 +96,7 @@ content {
 	pointer-events: none;
 	position: relative;
 
-	@media screen and (min-width: $break-large) {
+	@include bp(large) {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -123,7 +121,7 @@ content {
 		margin-right: auto;
 		overflow: hidden;
 
-		@media screen and (min-width: $break-large) {
+		@include bp(large) {
 			border-radius: 10%;
 			height: $nav-size;
 			width: $nav-size;
@@ -139,7 +137,7 @@ content {
 			padding-top: 1rem;
 			transition: all 200ms;
 
-			@media screen and (min-width: $break-large) {
+			@include bp(large) {
 				float: right;
 				padding-top: 15%;
 				height: 100%;
@@ -147,7 +145,7 @@ content {
 			}
 		}
 		.nav__split:hover {
-			@media screen and (min-width: $break-large) {
+			@include bp(large) {
 				width: 55%;
 			}
 		}
@@ -165,7 +163,7 @@ content {
 				background-color: $highlight-color_1;
 			}
 
-			@media screen and (min-width: $break-large) {
+			@include bp(large) {
 				a { 
 					padding-left: $nav-pad;
 					text-align: left;
@@ -184,7 +182,7 @@ content {
 				display: none;
 			}
 
-			@media screen and (min-width: $break-large) {
+			@include bp(large) {
 				.between {
 					display: inline;
 				}
@@ -228,7 +226,7 @@ content {
 
 			a:hover {
 				font-weight: bold;
-				@media screen and (min-width: $break-large) {
+				@include bp(large) {
 					padding-left: 2rem;
 				}
 			}
