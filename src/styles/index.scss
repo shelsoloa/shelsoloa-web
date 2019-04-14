@@ -1,4 +1,4 @@
-@import 'colors';
+@import 'master';
 
 
 .index-page {
@@ -40,14 +40,24 @@
 	}
 
 	.post-preview {
-		width: 45%;
+
+		@include bp(large) {
+			width: 45%;			
+		}
+
 		.post__inner {
 			border-left-color: $highlight-color_2;
-			height: 10rem;
 			overflow-y: hidden;
+			@include bp(large) {
+				height: 10rem;
+			}
 		}
 		.post__inner:hover {
 			border-left-color: $highlight-color_2;
+		}
+
+		.post__date {
+			color: $highlight-color_3;
 		}
 	}
 }
