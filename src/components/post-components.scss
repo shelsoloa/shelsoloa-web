@@ -6,6 +6,15 @@
 	margin-bottom: 2rem;
 	transition: all 200ms;
 
+	&:hover {
+		.post__title {
+			border-left: 0.5rem solid;
+		}
+		.post__inner {
+			border-left: 0.5rem solid;
+		}
+	}
+
 	.post__inner {
 		border-left: 2px solid;
 		padding-left: 0.5rem;
@@ -24,11 +33,4 @@
 		margin-bottom: 0.5rem;
 	}
 }
-.post-preview:hover {
-	.post__title {
-		border-left: 0.5rem solid;
-	}
-	.post__inner {
-		border-left: 0.5rem solid;
-	}
-}
+

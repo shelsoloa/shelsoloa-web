@@ -48,12 +48,10 @@
 		.post__inner {
 			border-left-color: $highlight-color_2;
 			overflow-y: hidden;
+
 			@include bp(large) {
 				height: 10rem;
 			}
-		}
-		.post__inner:hover {
-			border-left-color: $highlight-color_2;
 		}
 
 		.post__date {

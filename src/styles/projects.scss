@@ -1,35 +1,14 @@
+@import 'master';
+
+
 .projects-page {
-
-	$offwhite: #F1FAEE;
-	$lightblue: #A8DADC;
-	$midblue: #457B9D;
-	$darkblue: #1D3557;
-	$highlight: #E63946;
-
-	$hexcolor: #FFA500;
-
-	// background-color: $midblue;
-
-	content {
-		// background-color: $midblue;
-
-		.content__wrapper {
-			border: none;
-			color: $offwhite;
-			// background: $midblue;
-		}
-	}
-
-	@import "../components/hexagon.scss";
 	.hex_container {
-		// background: $midblue;
-	
 		.hexagon__inner {
-			background: $hexcolor;
+			background: $highlight-color_1;
 		}
 
 		.hexagon:hover, .hexagon__inner:hover {
-			background: $offwhite;
+			background: $text-color;
 		}
 	}
 }

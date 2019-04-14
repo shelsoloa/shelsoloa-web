@@ -5,21 +5,21 @@ $sidebar-width: 35%;
 
 
 @include bp(large) {
-	.topbar, .bottombar {
-		position: fixed;
-		left: 0;
-		width: 100%;
-		height: 1.5rem;
+	.bottombar, .topbar {
 		background-color: black;
 		content: ' ';
+		height: 1.5rem;
+		left: 0;
+		position: fixed;
+		width: 100%;
 		z-index: 100;
-	}
-	.topbar {
-		top: 0;
 	}
 	.bottombar {
 		bottom: 0;
 	}	
+	.topbar {
+		top: 0;
+	}
 }
 
 .page {
@@ -143,10 +143,11 @@ content {
 				height: 100%;
 				width: 45%;
 			}
-		}
-		.nav__split:hover {
-			@include bp(large) {
-				width: 55%;
+
+			&:hover {
+				@include bp(large) {
+					width: 55%;
+				}
 			}
 		}
 
@@ -158,32 +159,28 @@ content {
 				text-align: center;
 				text-decoration: none;
 				transition: all 200ms ease-out;
-			}
-			a:hover {
-				background-color: $highlight-color_1;
-			}
 
-			@include bp(large) {
-				a { 
+				@include bp(large) {
 					padding-left: $nav-pad;
 					text-align: left;
 				}
-				a:hover {
+
+				&:active, &:hover {
 					background-color: $highlight-color_1;
-				}				
+				}
 			}
 		}
 
-		.nav__header h1 {
-			font-family: 'Damion';
-			margin-left: -0.2rem;
+		.nav__header {
+			h1 {
+				font-family: 'Damion';
+				margin-left: -0.2rem;
+			}
 
 			.between {
 				display: none;
-			}
 
-			@include bp(large) {
-				.between {
+				@include bp(large) {
 					display: inline;
 				}
 			}
@@ -197,13 +194,12 @@ content {
 		.nav__social {
 			color: $highlight-color_2;
 			display: flex;
+			justify-content: space-between;
 			list-style-type: none;
+			margin-top: 1rem;
 			padding-left: $nav-pad;
 			padding-right: $nav-pad;
-			margin-top: 1rem;
-			justify-content: space-between;
 			width: 100%;
-
 
 			li {
 				display: inline;
@@ -214,17 +210,17 @@ content {
 				color: inherit;
 				font-size: 1.25rem;
 				margin: 0;
-			}
-
-			a:hover {
-				color: $highlight-color_1;
+			
+				&:active, &:hover {
+					color: $highlight-color_1;
+				}
 			}
 		}
 
 		.nav__links {
 			list-style-type: none;
 
-			a:hover {
+			a:active, a:hover {
 				font-weight: bold;
 				@include bp(large) {
 					padding-left: 2rem;

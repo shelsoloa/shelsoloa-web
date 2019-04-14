@@ -22,6 +22,12 @@
 		width: 30%;
 	}
 
+	&:active, &:hover {
+		background-color: #FFF1;
+		box-shadow: 0 0 8px #FFF1;
+		transform: scale(1.05);
+	}
+
 	img {
 		// TODO force 1:1 aspect ratio
 		
@@ -57,10 +63,4 @@
 		padding: 0;
 		text-align: center;
 	}
-}
-
-.project-preview:hover {
-	background-color: #FFF1;
-	box-shadow: 0 0 8px #FFF1;
-	transform: scale(1.05);
 }
