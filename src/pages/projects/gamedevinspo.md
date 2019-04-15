@@ -3,6 +3,7 @@ title: GameDevInspo
 subtitle: "A blog that shows off awesome gamedev content to gamedevs"
 preview_image: "../../data/img/img_GDI__logo.png"
 date: 2021-01-01
+status: "Live"
 tags: ["featured", "archived"]
 ---
 

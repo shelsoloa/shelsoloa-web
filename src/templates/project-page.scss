@@ -1,17 +1,17 @@
 @import '../styles/master';
 
-.post-page {
+.project-page {
 
-	.post {
-		.post__title {
+	.project {
+		.project__title {
 			color: $highlight-color_2;
 			margin-bottom: 0;
 		}
-		.post__date {
+		.project__date {
 			color: $highlight-color_3;
 			font-style: italic;
 		}
-		.post__tags {
+		.project__tags {
 			color: $highlight-color_3;
 			list-style-type: none;
 			margin: 0;
