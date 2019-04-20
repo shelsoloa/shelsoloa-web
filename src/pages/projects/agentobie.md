@@ -5,6 +5,8 @@ preview_image: "../../data/img/img_agentobie__screenshot-1.png"
 date: 2016-01-01
 status: "In development (on hiatus)"
 tags: ["featured", "game"]
+github: shelsoloa/AgentObie
+twitter: _shellbot_
 ---
 
 > Agent Obie is a hobby project and is developed on an irregular basis.

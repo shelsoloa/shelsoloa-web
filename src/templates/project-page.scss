@@ -4,12 +4,22 @@
 
 	.project {
 		.project__title {
-			color: $highlight-color_2;
 			margin-bottom: 0;
+			text-align: right;
 		}
-		.project__date {
-			color: $highlight-color_3;
+		.project__status {
+			color: $highlight-color_1;
 			font-style: italic;
+			text-align: right;
+			margin: 0;
+		}
+		.project__social {
+			text-align: right;
+			list-style-type: none;
+			li {
+				display: inline;
+				padding-left: 1rem;
+			}
 		}
 		.project__tags {
 			color: $highlight-color_3;
@@ -32,6 +42,23 @@
 				}
 			}
 		}
+	}
+
+	.visit-button {
+		background-color: $highlight-color_1;
+		border-radius: 4px;
+		color: $bg-color;
+		display: inline-block;
+		margin-bottom: 1rem;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 0.5rem;
+		padding-right: 0.5rem;
+	}
+
+	.visit-button__wrap {
+		display: block;
+		text-align: center;
 	}
 
 	.hex_container {
