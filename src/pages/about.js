@@ -11,7 +11,7 @@ import headshot from '../data/img/img_self.jpg'
 export default ({ data }) => (
 	<Layout class='about-page' header='About' subheader='thanks for your interest!'>
 
-		<img class='headshot' src={headshot}/>
+		<img class='headshot' src={headshot} alt='shel soloa headshot'/>
 		<div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}/>
 
 	</Layout>
