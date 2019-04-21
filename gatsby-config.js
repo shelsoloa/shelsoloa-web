@@ -1,6 +1,18 @@
 module.exports = {
 	siteMetadata: {
-		title: 'shel soloa'
+		title: 'shel soloa',
+		description: 'The journal and portfolio of web developer Shel Soloa',
+		siteUrl: 'shelsoloa.com',
+		author: {
+			name: 'Shel Soloa'
+		},
+		social: {
+			github: 'shelsoloa',
+			medium: '@shelsoloa',
+			tumblr: 'sshellbot',
+			twitter: '_shellbot_',
+			youtube: 'UCM2oD1gLLENjmHLNURW8JDg'
+		}
 	},
 	plugins: [
 		`gatsby-plugin-sass`,
@@ -27,6 +39,7 @@ module.exports = {
 			}
 		},
 		`gatsby-plugin-emotion`,
+		`gatsby-plugin-react-helmet`,
 		{
 			resolve: `gatsby-plugin-typography`,
 			options: {
