@@ -62,7 +62,7 @@ export default props => (
 							<ul class='nav__social'>
 								<li><a href={'http://twitter.com/' + data.site.siteMetadata.social.twitter}><FaTwitter/></a></li>
 								<li><a href={'http://github.com/' + data.site.siteMetadata.social.github}><FaGithub/></a></li>
-								<li><Link to='/about#links'><FaEllipsisH/></Link></li>
+								<li><a href={'http://medium.com/' + data.site.siteMetadata.social.medium}><FaMedium/></a></li>
 							</ul>
 						</div>
 					</nav>
