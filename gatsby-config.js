@@ -42,7 +42,7 @@ module.exports = {
 		{
 			resolve: `gatsby-plugin-favicon`,
 			options: {
-				logo: `./src/data/img/img_shelsoloa__logo--transparent.png`
+				logo: `./src/data/img/img_shelsoloa__logo.png`
 			}
 		},
 		`gatsby-plugin-react-helmet`,
