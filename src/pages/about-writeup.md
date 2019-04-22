@@ -26,7 +26,7 @@ If you want to work together then shoot me a message on any of my social media a
 
 Outside of what I have in the [Projects](/projects) section, you can see more of my content through my social media accounts.
 
-- [twitter / @\_shellbot\_](http://twitter.com/_shellbot_)
+- [twitter / @shelsoloa](http://twitter.com/shelsoloa)
 	
   I'm active on twitter, the jury is still out on whether that's a good thing. Follow for my thoughts pertaining to software development and tech news, updates on my current projects, and rants about things that bother me on the internet (which is a lot).
 
@@ -34,7 +34,7 @@ Outside of what I have in the [Projects](/projects) section, you can see more of
 
   All my open-source projects are available on github. Follow for consistent updates with all the details I don't get a chance to talk about.
 
-- [tumblr / sshellbot.tumblr.com](http://sshellbot.tumblr.com)
+- [tumblr / shelsoloa.tumblr.com](http://shelsoloa.tumblr.com)
 
   I post OC (Original Content, for the layman) to tumblr. Consider this a content feed without the excess noise of twitter or the .
 
@@ -54,7 +54,7 @@ Outside of what I have in the [Projects](/projects) section, you can see more of
 
 This site is part portfolio, part journal; I feature my [projects](/projects) and share my [written content](/blog). 
 
-This website is still in early stages so it's missing a lot of my work; eventually I will have documented __all__ of my content on these pages. In the meantime, I hope you get a kick of seeing what's currently here and [__follow along__](http://twitter.com/_shellbot_) if you want to see more!
+This website is still in early stages so it's missing a lot of my work; eventually I will have documented __all__ of my content on these pages. In the meantime, I hope you get a kick of seeing what's currently here and [__follow along__](http://twitter.com/shelsoloa) if you want to see more!
 
 __For the nerds__: I developed this site using __Gatsby.JS__, you can browse the [source for the project](http://github.com/shelsoloa/shelsoloa-web "Github repo for shelsoloa website"), or read an article I wrote on [developing my portfolio](# "Not finished yet.").
 

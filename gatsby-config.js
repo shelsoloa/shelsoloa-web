@@ -9,8 +9,8 @@ module.exports = {
 		social: {
 			github: 'shelsoloa',
 			medium: '@shelsoloa',
-			tumblr: 'sshellbot',
-			twitter: '_shellbot_',
+			tumblr: 'shelsoloa',
+			twitter: 'shelsoloa',
 			youtube: 'UCM2oD1gLLENjmHLNURW8JDg'
 		}
 	},

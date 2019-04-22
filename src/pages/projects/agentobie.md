@@ -6,11 +6,10 @@ date: 2016-01-01
 status: "In development (on hiatus)"
 tags: ["featured", "game"]
 github: shelsoloa/AgentObie
-twitter: _shellbot_
 ---
 
 > Agent Obie is a hobby project and is developed on an irregular basis.
-> ~ shel soloa ([@\_shellbot\_](http://twitter.com/_shellbot_))
+> ~ shel soloa ([@shelsoloa](http://twitter.com/shelsoloa))
 
 ![](../../data/img/img_agentobie__screenshot-1.png)
 
@@ -39,6 +38,6 @@ I build levels in Tiled2D, create sprites in either PyxelEdit or GraphicsGale, a
 ## Links
  - Download - There is one available binary file for Agent Obie [AgentObie_Alpha3]() (not representative of the current or finished product)
  - Source code - Agent Obie is currently available on [Github](http://github.com/shelsoloa/agentobie)
- - [Twitter](http://twitter.com/_shellbot_) - if you want more updates on all the stuff I'm working at [@\_shellbot\_](http://twitter.com/_shellbot_)
+ - [Twitter](http://twitter.com/shelsoloa) - if you want more updates on all the stuff I'm working at [@shelsoloa](http://twitter.com/shelsoloa)
 
  ![](../../data/img/img_agentobie__run.gif)
