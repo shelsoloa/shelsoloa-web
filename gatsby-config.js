@@ -39,6 +39,12 @@ module.exports = {
 			}
 		},
 		`gatsby-plugin-emotion`,
+		{
+			resolve: `gatsby-plugin-favicon`,
+			options: {
+				logo: `./src/data/img/img_shelsoloa__logo--transparent.png`
+			}
+		},
 		`gatsby-plugin-react-helmet`,
 		{
 			resolve: `gatsby-plugin-typography`,
