@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql, Link, StaticQuery } from "gatsby"
-import { FaEllipsisH, FaGithub, FaMedium, FaTumblr, FaTwitter, FaYoutube } from "react-icons/fa"
+import { FaGithub, FaMedium, FaTumblr, FaTwitter, FaYoutube } from "react-icons/fa"
 import { Helmet } from "react-helmet"
 
 import { HexBackground } from "./hexagon"
