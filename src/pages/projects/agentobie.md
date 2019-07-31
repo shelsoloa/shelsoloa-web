@@ -8,13 +8,11 @@ tags: ["featured", "game"]
 github: shelsoloa/AgentObie
 ---
 
-> Agent Obie is a hobby project and is developed on an irregular basis.
-> ~ shel soloa ([@shelsoloa](http://twitter.com/shelsoloa))
+> 2D stealth platformer
 
-![](../../data/img/img_agentobie__screenshot-1.png)
+#### Agent Obie is a hobby project developed on an irregular basis. ~ shel soloa ([@shelsoloa](http://twitter.com/shelsoloa))
 
-# Agent Obie
-Agent Obie is a 2D stealth platformer. In Agent Obie you must navigate through a variety of dubious levels using precise platforming skills, your arsenal of gadgets, and maybe even some luck to overcome the nefarious plot set forth by Dr. Diabolico.
+In Agent Obie you must navigate through a variety of dubious levels using precise platforming skills, your arsenal of gadgets, and maybe even some luck to overcome the nefarious plot set forth by Dr. Diabolico.
 
 ![](../../data/img/img_agentobie__gameplay.gif)
 

@@ -3,7 +3,7 @@ title: GameDevInspo
 subtitle: "A blog that shows off awesome gamedev content to gamedevs"
 preview_image: "../../data/img/img_GDI__logo.png"
 date: 2021-01-01
-status: "Live"
+status: "Active"
 tags: ["featured", "archived"]
 website: http://gamedevinspo.com
 facebook: gamedevinspo
@@ -11,7 +11,7 @@ instagram: gamedev.inspo
 twitter: gamedevinspo
 ---
 
-A blog that shows off awesome gamedev content to gamedevs.
+> A blog that shows off awesome gamedev content to gamedevs.
 
 <div class='visit-button__wrap'>
 	<a class='visit-button' href='http://gamedevinspo.com'>Visit GameDevInspo.com</a>
