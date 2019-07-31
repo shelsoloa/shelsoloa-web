@@ -16,7 +16,7 @@ export default ({data}) => (
 		<img class='logo' alt="It's Shel Soloa" description='My personal logo' src={logo_transparent}/>
 		<h1 class='header center'>ShelSoloa</h1>
 		<p class='subheader center highlight'>The development journal of Shel Soloa<br/></p>
-		<blockquote>Booking is currently CLOSED<br/>Availability opening in May</blockquote>
+		<blockquote>Booking opening soon</blockquote>
 
 		<br/>
 		<hr/>

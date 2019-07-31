@@ -26,13 +26,13 @@ If you want to work together then shoot me a message on any of my social media a
 
 Outside of what I have in the [Projects](/projects) section, you can see more of my content through my social media accounts.
 
-- [twitter / @shelsoloa](http://twitter.com/shelsoloa)
-	
-  I'm active on twitter, the jury is still out on whether that's a good thing. Follow for my thoughts pertaining to software development and tech news, updates on my current projects, and rants about things that bother me on the internet (which is a lot).
-
 - [github / shelsoloa](http://github.com/shelsoloa)
 
   All my open-source projects are available on github. Follow for consistent updates with all the details I don't get a chance to talk about.
+
+- [twitter / @shelsoloa](http://twitter.com/shelsoloa)
+	
+  I'm _somewhat_ active on twitter, the jury is still out on whether that's a good thing. Follow for my thoughts pertaining to software development and tech news, updates on my current projects, and rants about things that bother me on the internet (which is a lot).
 
 - [tumblr / shelsoloa.tumblr.com](http://shelsoloa.tumblr.com)
 
@@ -40,7 +40,7 @@ Outside of what I have in the [Projects](/projects) section, you can see more of
 
 - [medium / @shelsoloa](http://medium.com/@shelsoloa) [coming soon]
 
-  Coming soon: I'll be sharing my writing to medium. Follow me ahead of time if you're interested in seeing what I come up with. It will probably be related to development but possibly include my other interests.
+  Some of my writing can be found on medium. Follow me there if you're interested in seeing what I come up with. It's usually related to development but also includes some of my other interests.
 
 - [youtube](http://youtube.com/channel/UCM2oD1gLLENjmHLNURW8JDg) [coming soon]
 
@@ -56,7 +56,7 @@ This site is part portfolio, part journal; I feature my [projects](/projects) an
 
 This website is still in early stages so it's missing a lot of my work; eventually I will have documented __all__ of my content on these pages. In the meantime, I hope you get a kick of seeing what's currently here and [__follow along__](http://twitter.com/shelsoloa) if you want to see more!
 
-__For the nerds__: I developed this site using __Gatsby.JS__, you can browse the [source for the project](http://github.com/shelsoloa/shelsoloa-web "Github repo for shelsoloa website"), or read an article I wrote on [developing my portfolio](# "Not finished yet.").
+__For the nerds__: I developed this site using __Gatsby.JS__, you can browse the [source for the project](http://github.com/shelsoloa/shelsoloa-web "Github repo for shelsoloa website"), or read an article I wrote on [creating my portfolio](/blog/creating-my-portfolio).
 
 &nbsp;
 

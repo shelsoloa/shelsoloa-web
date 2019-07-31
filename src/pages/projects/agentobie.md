@@ -13,7 +13,7 @@ github: shelsoloa/AgentObie
 
 ![](../../data/img/img_agentobie__screenshot-1.png)
 
-#Agent Obie
+# Agent Obie
 Agent Obie is a 2D stealth platformer. In Agent Obie you must navigate through a variety of dubious levels using precise platforming skills, your arsenal of gadgets, and maybe even some luck to overcome the nefarious plot set forth by Dr. Diabolico.
 
 ![](../../data/img/img_agentobie__gameplay.gif)
