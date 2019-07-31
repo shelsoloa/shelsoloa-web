@@ -12,7 +12,7 @@ export default ({ data }) => {
 		<Layout class='project-page'>
 			<div class='project'>
 				<h1 class='project__title'>{project.frontmatter.title}</h1>
-				<p class='project__status'>Status: {project.frontmatter.status}</p>
+				<p class='project__status'>Status: <span class='status'>{project.frontmatter.status}</span></p>
 				<ul class='project__social'>
 					{project.frontmatter.website &&
 						<li>
@@ -41,8 +41,8 @@ export default ({ data }) => {
 					}
 				</ul>
 
-				<img src={project.frontmatter.preview_image.publicURL} alt={project.frontmatter.title + ' preview image'}/>
-				
+				<img class='project__header-image' src={project.frontmatter.preview_image.publicURL} alt={project.frontmatter.title + ' preview image'}/>
+			
 				<div dangerouslySetInnerHTML={{ __html: project.html }}/>
 			</div>
 		</Layout>

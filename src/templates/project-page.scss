@@ -5,20 +5,24 @@
 	.project {
 		.project__title {
 			margin-bottom: 0;
-			text-align: right;
+			text-align: left;
 		}
 		.project__status {
-			color: $highlight-color_1;
-			font-style: italic;
-			text-align: right;
+			span {
+				color: $highlight-color_1;
+				font-style: italic;		
+			}
+			text-align: left;
 			margin: 0;
 		}
 		.project__social {
-			text-align: right;
+			text-align: left;
 			list-style-type: none;
+			margin: 0;
 			li {
 				display: inline;
-				padding-left: 1rem;
+				padding-right: 1rem;
+				margin: 0;
 			}
 		}
 		.project__tags {
@@ -42,6 +46,22 @@
 				}
 			}
 		}
+		.project__header-image {
+			max-height: 50vh;
+		}
+
+		img {
+			display: block;
+			margin: 0;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+
+	blockquote {
+		color: $highlight-color_1;
+		text-align: center;
+		font-size: 1.13em;
 	}
 
 	.visit-button {
@@ -63,11 +83,11 @@
 
 	.hex_container {
 		.hexagon__inner {
-			background: $highlight-color_2;
+			background: $highlight-color_1;
 		}
 
 		.hexagon:hover, .hexagon__inner:hover {
-			background: $highlight-color_3;
+			background: $text-color;
 		}
 	}
 }
