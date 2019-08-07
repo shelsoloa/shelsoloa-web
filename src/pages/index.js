@@ -22,7 +22,7 @@ export default ({data}) => (
 		<hr/>
 		<br/>
 
-		<h1 class='center'>Featured Projects</h1>
+		<h1 class='center'><span aria-label='emoji' role='img'>👨🏾‍💻</span>Featured Projects</h1>
 		<ProjectsSection class='featured-projects'>
 			{data.featuredProjects.edges.map(({ node }) => (
 				<ProjectPreview
@@ -42,7 +42,7 @@ export default ({data}) => (
 		<hr/>
 		<br/>
 
-		<h1 class='center'>Latest Posts</h1>
+		<h1 class='center'><span aria-label='emoji' role='img'>📖</span>Latest Posts</h1>
 		<div class='latest-posts'>
 			{data.recentBlogPosts.edges.map(({ node }) => (
 				<PostPreview
