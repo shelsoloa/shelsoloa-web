@@ -20,8 +20,6 @@ This functionality includes: collision detection, state management, resource man
 
 Peachy was developed alongside [Agent Obie](/projects/agent-obie) and Over Yonder.
 
-The idea behind peachy was to create a batteries included solution for developing 2D games in Python 3. Think _"Flask for gamedev"_.
+The idea behind peachy was to create a batteries included solution for developing 2D games in Python 3. Think _"Flask but for gamedev"_. While this was a lot of fun to work on, development was slow and it wasn't a sustainable idea.
 
-Flask was not meant to develop video games.
-
-Peachy reached it's twilight in 2017 after I ported Agent Obie to Godot. Peachy is no longer maintained, but if anyone wants to dust it off and give it a go, I would encourage you to do so 😀
+Peachy reached it's twilight in 2017 after I ported Agent Obie to Godot. Peachy is no longer maintained, but if anyone wants to dust it off and give it a go, I would encourage you to do so 😀 !
