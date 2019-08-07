@@ -41,7 +41,10 @@ export default ({ data }) => {
 					}
 				</ul>
 
-				<img class='project__header-image' src={project.frontmatter.preview_image.publicURL} alt={project.frontmatter.title + ' preview image'}/>
+				<img class='project__header-image' 
+					src={project.frontmatter.banner_image != null ? project.frontmatter.banner_image.publicURL : project.frontmatter.preview_image.publicURL}
+					alt={project.frontmatter.title + ' preview image'}
+				/>
 			
 				<div dangerouslySetInnerHTML={{ __html: project.html }}/>
 			</div>
@@ -56,6 +59,9 @@ export const query = graphql`
 			frontmatter {
 				title
 				status
+				banner_image {
+					publicURL
+				}
 				preview_image {
 					publicURL
 				}
