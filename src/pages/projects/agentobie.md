@@ -3,39 +3,41 @@ title: Agent Obie
 subtitle: "2D stealth platformer"
 preview_image: "../../data/img/img_agentobie__screenshot-1.png"
 date: 2016-01-01
-status: "In development (on hiatus)"
+status: "In development (sometimes)"
 tags: ["featured", "game"]
 github: shelsoloa/AgentObie
 ---
 
-> 2D stealth platformer
+> Agent Obie / 2D Action Stealth Platformer
 
-#### Agent Obie is a hobby project developed on an irregular basis. ~ shel soloa ([@shelsoloa](http://twitter.com/shelsoloa))
-
-In Agent Obie you must navigate through a variety of dubious levels using precise platforming skills, your arsenal of gadgets, and maybe even some luck to overcome the nefarious plot set forth by Dr. Diabolico.
+In Agent Obie you must navigate through an array of challenging levels using precise platforming skills, an arsenal of gadgets, and puzzle-solving capabilities to overcome the plot set forth by an unknown global assailant.
 
 ![](../../data/img/img_agentobie__gameplay.gif)
 
 ## Story
-Agent Obie is a spy working for the Onyx Collective, a global initiative to prevent evil from taking over.
-
-Obie and his team have recently been contracted to investigate what could be a chemical weapon being developed in the Desert. He is sent on the mission alone and must infiltrate the secret lair of Dr. Diabolico and prevent them from causing mass destruction.
-
+Agent Obie is a mercenary employed by Onyx, an undercover agency tasked with protecting the world against the highest level of threats. His most recent job is to infiltrate a heavily-fortified encampment that has been emitting signs of hostile activity. You join Obie as he seeks to find out what could be going on there, and who is behind it.
 
 ## Background on Agent Obie
-Agent Obie has currently been in development for roughly two years, however that time isn't continuous, the amount of concurrent time spent developing agent obie is probably closer to 2 months.
 
 ![](../../data/img/img_agentobie__gameplay-2.gif)
 
+Agent Obie has been in development for roughly two years. I return to Agent Obie as a hobby when I have time, which isn't often.
 
-## Tools Used
-Agent Obie was originally developed using a custom built engine (that I eventually open-sourced under the name [Peachy](/projects/peachy "Peachy Project Page") ) but development time was far too slow so I eventually started using Godot!
+#### Tools Used
 
-I build levels in Tiled2D, create sprites in either PyxelEdit or GraphicsGale, and use sfxr for sound effects.
+- Godot
+- PyxelEdit
+- GraphicsGale
+- Tiled2D
+- sfxr
+
+Development of Agent Obie was originally done using my custom built engine [Peachy](/projects/peachy "Peachy Project Page"), but development time was slow so Agent Obie was migrated to Godot, a free and open source game engine.
+
+Levels are built using Tiled2D, sprites are done in either PyxelEdit or GraphicsGale, sound effects are outsourced or thrown together in sfxr.
 
 ## Links
- - Download - There is one available binary file for Agent Obie [AgentObie_Alpha3]() (not representative of the current or finished product)
- - Source code - Agent Obie is currently available on [Github](http://github.com/shelsoloa/agentobie)
- - [Twitter](http://twitter.com/shelsoloa) - if you want more updates on all the stuff I'm working at [@shelsoloa](http://twitter.com/shelsoloa)
+ - Download [Agent Obie (Early Alpha)](https://www.dropbox.com/s/uq7qv5j7cv4rl6v/AgentObie_Alpha3.zip?dl=0) - _not representative of current or finished product_
+ - View [Source code](http://github.com/shelsoloa/agentobie)
+ - Follow [twitter/@shelsoloa](http://twitter.com/shelsoloa) to see what I'm working on
 
  ![](../../data/img/img_agentobie__run.gif)
