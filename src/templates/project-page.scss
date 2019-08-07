@@ -80,14 +80,4 @@
 		display: block;
 		text-align: center;
 	}
-
-	.hex_container {
-		.hexagon__inner {
-			background: $highlight-color_1;
-		}
-
-		.hexagon:hover, .hexagon__inner:hover {
-			background: $text-color;
-		}
-	}
 }

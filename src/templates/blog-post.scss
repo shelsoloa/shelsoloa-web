@@ -33,14 +33,4 @@
 			}
 		}
 	}
-
-	.hex_container {
-		.hexagon__inner {
-			background: $highlight-color_2;
-		}
-
-		.hexagon:hover, .hexagon__inner:hover {
-			background: $highlight-color_3;
-		}
-	}
 }
