@@ -31,19 +31,13 @@
 	}
 
 	.latest-posts {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
 		.highlight {
 			color: $highlight-color_2;
 		}
 	}
 
 	.post-preview {
-
-		@include bp(large) {
-			width: 45%;			
-		}
+		display: block;
 
 		.post__inner {
 			border-left-color: $highlight-color_2;
