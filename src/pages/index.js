@@ -15,8 +15,8 @@ export default ({data}) => (
 	<Layout class='index-page' header='' subheader=''>
 		<img class='logo' alt="It's Shel Soloa" description='My personal logo' src={logo_transparent}/>
 		<h1 class='header center'>ShelSoloa</h1>
-		<p class='subheader center highlight'>The development journal of Shel Soloa<br/></p>
-		<blockquote>I'm available for freelance contracts!<br/><a href='mailto:shel@shelsoloa.com'>Message me</a></blockquote>
+		<p class='subheader center highlight'>a development journal<br/></p>
+		<blockquote>Unavailable for new contracts<br/></blockquote>
 
 		<br/>
 		<hr/>
