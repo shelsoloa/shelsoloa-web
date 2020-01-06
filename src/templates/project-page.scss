@@ -9,7 +9,7 @@
 		}
 		.project__status {
 			span {
-				color: $highlight-color_1;
+				color: $highlight-color;
 				font-style: italic;		
 			}
 			text-align: left;
@@ -26,13 +26,13 @@
 			}
 		}
 		.project__tags {
-			color: $highlight-color_3;
+			color: $highlight-color;
 			list-style-type: none;
 			margin: 0;
 			margin-bottom: 1rem;
 
 			li {
-				border: 1px $highlight-color_3 solid;
+				border: 1px $highlight-color solid;
 				border-radius: 10%;
 				display: inline-block;
 				margin-right: 1rem;
@@ -60,14 +60,14 @@
 	}
 
 	blockquote {
-		color: $highlight-color_1;
+		color: $highlight-color;
 		text-align: center;
 		font-size: 1.13em;
 		font-style: italic;
 	}
 
 	.visit-button {
-		background-color: $highlight-color_1;
+		background-color: $highlight-color;
 		border-radius: 4px;
 		color: $bg-color;
 		display: inline-block;

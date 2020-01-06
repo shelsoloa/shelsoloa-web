@@ -4,21 +4,21 @@
 
 	.post {
 		.post__title {
-			color: $highlight-color_2;
+			color: $highlight-color;
 			margin-bottom: 0;
 		}
 		.post__date {
-			color: $highlight-color_3;
+			color: $highlight-color;
 			font-style: italic;
 		}
 		.post__tags {
-			color: $highlight-color_3;
+			color: $highlight-color;
 			list-style-type: none;
 			margin: 0;
 			margin-bottom: 1rem;
 
 			li {
-				border: 1px $highlight-color_3 solid;
+				border: 1px $highlight-color solid;
 				border-radius: 10%;
 				display: inline-block;
 				margin-right: 1rem;

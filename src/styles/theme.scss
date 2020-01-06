@@ -8,7 +8,7 @@ body {
 
 a {
 	text-decoration: none;
-	color: $highlight-color_1;
+	color: $highlight-color;
 	
 	&:hover {
 		color: white;
@@ -20,5 +20,5 @@ a {
 }
 
 .highlight {
-	color: $highlight-color_1;
+	color: $highlight-color;
 }

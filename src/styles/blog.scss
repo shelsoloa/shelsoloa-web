@@ -2,34 +2,32 @@
 
 .blog-page {
 
-	$bgcolor: #EAE0D5;
-
 	.highlight {
-		color: $highlight-color_3;
+		color: $highlight-color;
 	}
 
 	.post-preview {
 		display: block;
 
 		.post__inner {
-			border-left-color: $highlight-color_2;
+			border-left-color: $highlight-color;
 		}
 
 		.post__title {
-			color: $highlight-color_2;
+			color: $highlight-color;
 		}
 
 		.post__date {
-			color: $highlight-color_3;
+			color: $highlight-color;
 		}
 	}
 
 	.post-preview:hover {
 		.post__title {
-			color: $highlight-color_3;
+			color: $highlight-color;
 		}
 		.post__inner {
-			border-left-color: $highlight-color_3;
+			border-left-color: $highlight-color;
 		}
 	}
 }
