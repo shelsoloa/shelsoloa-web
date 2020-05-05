@@ -1,0 +1,10 @@
+@font-face {
+	font-family: "anka-coder";
+	src: url("./AnkaCoder-r.ttf");
+}
+
+@font-face {
+	font-family: "anka-coder";
+	src: url("./AnkaCoder-b.ttf");
+	font-weight: bold;
+}

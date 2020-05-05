@@ -46,6 +46,15 @@ module.exports = {
 			}
 		},
 		`gatsby-plugin-react-helmet`,
+        {
+          resolve: "gatsby-plugin-web-font-loader",
+          options: {
+            custom: {
+              families: ["anka-coder"],
+              urls: ["/fonts/fonts.css"],
+            },
+          },
+        },
 		{
 			resolve: `gatsby-plugin-typography`,
 			options: {
