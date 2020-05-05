@@ -50,6 +50,9 @@ export default props => (
 						</div>
 
 						<nav>
+
+							<h1 class='nav__header'>Shel Soloa</h1>
+
 							<ul class='nav__links'>
 								<li class='current-section'><Link to='/'>Home</Link></li>
 								<li><Link to='/blog'>Articles</Link></li>
