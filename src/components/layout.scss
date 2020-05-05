@@ -7,7 +7,7 @@ $sidebar-width: 30%;
 .topbar {
 	display: block;
 	background-color: #000;
-	opacity: 50%;
+	opacity: 0.5;
 
 	position: fixed;
 	left: 0;
@@ -204,7 +204,7 @@ content {
 		.nav__header {
 			font-family: 'Damion';
 			text-align: center;
-			opacity: 75%;
+			opacity: 0.75;
 			@include bp(small) {
 				padding-top: 0.5rem;
 			}
