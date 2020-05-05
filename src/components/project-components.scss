@@ -20,8 +20,14 @@
 	transition: all 150ms;
 	margin-bottom: 1rem;
 
+	width: 45%;
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+
 	@include bp(large) {
 		width: 30%;
+		margin-left: auto;
+		margin-right:auto;
 	}
 
 	&:active, &:hover {
@@ -37,11 +43,8 @@
 		display: block;
 		margin: 0;
 		margin-bottom: 1rem;
-
-		@include bp(large) {
-			height: 200px;
-			width: 100%;
-		}
+		width: 100%;
+		height: 200px;
 	}
 
 	hr {
