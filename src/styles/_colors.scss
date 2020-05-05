@@ -1,9 +1,18 @@
-$bg-color: #21271D;
+// Shel Soloa Palette
+$green-1: #5D5D21;
+$green-2: #3A3D22;
+$green-3: #242C22;
+$orange: #FF5022;
+$blue-1: #004562;
+$blue-2: #003037;
+$blue-3: #001A24;
+$brown-1: #924027;
+$brown-2: #4B2916;
+$brown-3: #261F15;
+$white: #E5BD97;
+$red: #A5313B;
 
-$text-color: #FFEED0;
-
-$highlight-color: #f25727;
-$highlight-color_2: #0093CF;
-
-$hex_color: $highlight-color;
-$hex_highlight: $text-color;
+// presets
+$bg-color: $green-3;
+$highlight-color: $orange;
+$text-color: $white;

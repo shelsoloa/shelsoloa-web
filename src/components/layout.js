@@ -3,7 +3,7 @@ import { graphql, Link, StaticQuery } from "gatsby"
 import { FaGithub, FaMedium, FaTumblr, FaTwitter, FaYoutube } from "react-icons/fa"
 import { Helmet } from "react-helmet"
 
-import { HexBackground } from "./hexagon"
+import portrait from "../data/img/img_shelsoloa__portrait.png"
 
 import './layout.scss'
 
@@ -40,22 +40,20 @@ export default props => (
 					<meta name='description' content={data.site.siteMetadata.description}/>
 				</Helmet>
 
-				<HexBackground rows={12} columns={6}/>
-
-				<div class='topbar'></div>
-				<div class='bottombar'></div>
+				<div class='topbar'><a href="mailto:inquiry@shelsoloa.com">Currently available for contract work</a></div>
 
 				<div class='sidebar'>
-					<nav>
-						<div class='nav__split'>
-							<div class='nav__header'>
-								<Link to='/'><h1>Shel<span class='between'><br/>&nbsp;&nbsp;</span>Soloa</h1></Link>
-							</div>
 
+					<div class='sidebar__wrapper'>
+						<div class='sidebar__portrait'>
+							<img alt="Shel Soloa" description='My portrait' src={portrait}/>
+						</div>
+
+						<nav>
 							<ul class='nav__links'>
-								<li><Link to='/'>Home</Link></li>
+								<li class='current-section'><Link to='/'>Home</Link></li>
+								<li><Link to='/blog'>Articles</Link></li>
 								<li><Link to='/projects'>Projects</Link></li>
-								<li><Link to='/blog'>Blog</Link></li>
 								<li><Link to='/about'>About</Link></li>
 							</ul>
 
@@ -64,8 +62,8 @@ export default props => (
 								<li><a href={'http://github.com/' + data.site.siteMetadata.social.github}><FaGithub/></a></li>
 								<li><a href={'http://medium.com/' + data.site.siteMetadata.social.medium}><FaMedium/></a></li>
 							</ul>
-						</div>
-					</nav>
+						</nav>
+					</div>
 				</div>
 
 				<content>
@@ -77,18 +75,18 @@ export default props => (
 							{props.children}
 						</div>
 					</div>
-				</content>
 
-				<div class='footer'>
-					<div class='inner'>
-						<a className='highlight' href={'https://twitter.com/' + data.site.siteMetadata.social.twitter}><FaTwitter /></a>
-						<a className='highlight' href={'https://github.com/' + data.site.siteMetadata.social.github}><FaGithub /></a>
-						<a className='highlight' href={'https://medium.com/' + data.site.siteMetadata.social.medium}><FaMedium /></a>
-						<a className='highlight' href={'https://' + data.site.siteMetadata.social.tumblr + '.tumblr.com'}><FaTumblr /></a>
-						<a className='highlight' href={'https://youtube.com/channel/' + data.site.siteMetadata.social.youtube}><FaYoutube /></a>
-						<p>Thanks for checking my stuff out</p>
+					<div class='footer'>
+						<div class='inner'>
+							<a className='highlight' href={'https://twitter.com/' + data.site.siteMetadata.social.twitter}><FaTwitter /></a>
+							<a className='highlight' href={'https://github.com/' + data.site.siteMetadata.social.github}><FaGithub /></a>
+							<a className='highlight' href={'https://medium.com/' + data.site.siteMetadata.social.medium}><FaMedium /></a>
+							<a className='highlight' href={'https://' + data.site.siteMetadata.social.tumblr + '.tumblr.com'}><FaTumblr /></a>
+							<a className='highlight' href={'https://youtube.com/channel/' + data.site.siteMetadata.social.youtube}><FaYoutube /></a>
+							<p>Thanks for checking my stuff out</p>
+						</div>
 					</div>
-				</div>
+				</content>
 			</div>
 		)}
 	/>

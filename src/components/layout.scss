@@ -1,26 +1,30 @@
 @import '../styles/master';
 
 
-$sidebar-width: 35%;
+$sidebar-width: 30%;
 
 
-@include bp(large) {
-	.bottombar, .topbar {
-		background-color: black;
-		content: ' ';
-		height: 1.5rem;
-		left: 0;
+.topbar {
+	display: none;
+	@include bp(large) {
+		display: block;
+		background-color: #000;
+		opacity: 50%;
+
 		position: fixed;
-		width: 100%;
-		z-index: 100;
-	}
-	.bottombar {
-		bottom: 0;
-	}	
-	.topbar {
+		left: 0;
 		top: 0;
+		z-index: 100;
+
+		height: 2rem;
+		width: 100%;
+
+		font-family: "Anka/Coder";
+		font-size: 1.25rem;
+		text-align: center;
 	}
 }
+
 
 .page {
 	position: relative;
@@ -31,6 +35,9 @@ content {
 
 	pointer-events: none; // so this can be full width but not swallow hover
 	position: relative;
+
+	// border-left: 1px magenta solid;  // TEMP
+	box-shadow: -2px 0px 10px #000A;
 
 	@include bp(large) {
 		float: right;
@@ -96,35 +103,59 @@ content {
 	pointer-events: none;
 	position: relative;
 
+	// TODO parallax effect where code scrolls slower than the rest of the
+	// content.
+	background: url("../data/img/img_background__code.png");
+
 	@include bp(large) {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
+		display: block;
 		float: left;
 		height: 100%;
 		position: fixed;
 		width: $sidebar-width;
-	}	
+	}
+
+	// Add a sidebar wrapper so we can align these to the left and create a
+	// different background for the two of them.
+	.sidebar__wrapper {
+		height: 100%;
+		width: 82.5%;
+	}
+
+	.sidebar__portrait {
+		display: flex;
+		align-items: flex-end;
+		position: relative;
+		height: 40%;
+
+		img {
+			display: block;
+			max-height: 90%;
+			max-width: 100%;
+
+			margin-bottom: 0;
+			margin-left: auto;
+			margin-right: auto;
+
+			// bp (extra-large)
+			// float: right;
+			// margin-right: 10%;
+		}
+	}
 
 	nav {
-		$nav-size: 380px;
-		$nav-pad: 1.5rem;
+		$nav-pad: 20%;
 
-	    background-attachment: absolute;
-		background-image: url("../data/img/img_shelsoloa__logo.png");
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
+		background-color: $bg-color;
+		border-top: 0.5rem $brown-1 solid;
+		height: 60%;
+		padding-top: 1rem;
+		position: relative;
 
-		box-shadow: 0 0 20px #0008;
-		margin-left: auto;
-		margin-right: auto;
-		overflow: hidden;
+		box-shadow: 2px 10px 10px #000A;
 
 		@include bp(large) {
-			border-radius: 10%;
-			height: $nav-size;
-			width: $nav-size;
+			width: 100%;
 		}
 
 		* {
@@ -132,73 +163,15 @@ content {
 			margin: 0;
 		}
 
-		.nav__split {
-			background: #000C;
-			padding-top: 1rem;
-			transition: all 200ms;
-
-			@include bp(large) {
-				float: right;
-				padding-top: 15%;
-				height: 100%;
-				width: 45%;
-			}
-
-			&:hover {
-				@include bp(large) {
-					width: 55%;
-				}
-			}
-		}
-
-		.nav__header, .nav__links {
-			a { 
-				color: inherit;
-				display: block;
-				font-style: italic;
-				text-align: center;
-				text-decoration: none;
-				transition: all 200ms ease-out;
-
-				@include bp(large) {
-					padding-left: $nav-pad;
-					text-align: left;
-				}
-
-				&:active, &:hover {
-					background-color: $highlight-color;
-				}
-			}
-		}
-
-		.nav__header {
-			h1 {
-				font-family: 'Damion';
-				margin-left: -0.2rem;
-			}
-
-			.between {
-				display: none;
-
-				@include bp(large) {
-					display: inline;
-				}
-			}
-		}
-
-		.nav__subheader {
-			color: $highlight-color;
-			padding-left: 1rem;
-		}
-
 		.nav__social {
-			color: $highlight-color_2;
 			display: flex;
 			justify-content: space-between;
 			list-style-type: none;
-			margin-top: 1rem;
+			padding-bottom: 1rem;
 			padding-left: $nav-pad;
 			padding-right: $nav-pad;
+			position: absolute;
+			bottom: 0;
 			width: 100%;
 
 			li {
@@ -208,9 +181,9 @@ content {
 
 			a {
 				color: inherit;
-				font-size: 1.25rem;
+				font-size: 2rem;
 				margin: 0;
-			
+
 				&:active, &:hover {
 					color: $highlight-color;
 				}
@@ -220,15 +193,34 @@ content {
 		.nav__links {
 			list-style-type: none;
 
-			a:active, a:hover {
-				font-weight: bold;
-				@include bp(large) {
-					padding-left: 2rem;
-				}
+			// TODO: Make sure this is loading.
+			// TODO: font-size based on size of page;
+			font-family: 'Anka/Coder';
+			font-weight: bold;
+			font-size: 3rem;
+			padding-top: 0.5rem;
+
+			.current-section {
+				color: $highlight-color;
 			}
 
-			li {
-				margin: 0;
+			a, li {
+				display: block;
+				width: 100%;
+			}
+
+			a {
+				color: inherit;
+				padding-left: $nav-pad;
+				padding-right: $nav-pad;
+
+				&:active {
+					color: $highlight-color;
+				}
+				&:hover {
+					color: $bg-color;
+					background-color: $highlight-color;
+				}
 			}
 		}
 	}
