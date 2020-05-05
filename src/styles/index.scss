@@ -1,5 +1,7 @@
 @import 'master';
 
+$showcase-heading-font: "anka-coder";
+
 
 .index-page {
 
@@ -14,8 +16,9 @@
 
 	.header {
 		display: block;
-		font-family: 'Damion', 'Inconsolata', monospace;
-		font-size: 3rem;
+		color: $highlight-color;
+		font-family: 'Damion', monospace;
+		font-size: 5rem;
 		margin-left: auto;
 		margin-right: auto;
 		margin-bottom: 0;
@@ -30,27 +33,56 @@
 		text-align: center;
 	}
 
-	.latest-posts {
-		.highlight {
-			color: $highlight-color;
+	.showcase {
+		display: flex;
+		align-items: stretch;
+		flex-direction: row;
+		justify-content: space-between;
+
+		width: 100%;
+	}
+
+	.showcase__section-title {
+		font-family: $showcase-heading-font;
+		font-size: 1rem;
+		font-style: italic;
+		padding: 0;
+		margin: 0;
+	}
+	.showcase__section-name {
+		font-family: $showcase-heading-font;
+		padding: 0;
+		margin: 0;
+	}
+
+	.latest-post {
+		flex-grow: 3;
+		margin-right: 2rem;
+		width: 75%;
+
+		.post__date {
+			font-family: $showcase-heading-font;
 		}
 	}
 
-	.post-preview {
-		display: block;
+	.featured-project {
+		flex-grow: 1;
+		width: 25%;
 
-		.post__inner {
-			border-left-color: $highlight-color;
-			overflow-y: hidden;
+		border-left: 2px solid #0003;
+		padding-left: 1rem;
 
-			@include bp(large) {
-				height: 10rem;
+		.project__preview {
+			margin-top: 1rem;
+			border-radius: 1rem;
+			transition: all 150ms;
+
+			&:active, &:hover {
+				background-color: #FFF1;
+				box-shadow: 0 0 8px #FFF1;
+				transform: scale(1.05);
+				border: 2px $highlight-color solid;
 			}
-		}
-
-		.post__date {
-			color: $highlight-color;
 		}
 	}
 }
-

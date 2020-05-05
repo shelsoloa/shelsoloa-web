@@ -1,10 +1,8 @@
 ---
 title: "Ludum Dare Survival Guide"
 date: 2019-04-26
-tags: ["development", "ludum-dare"]
+tags: ["development", "ludum-dare", "latest"]
 ---
-
-# Ludum Dare Survival Guide
 
 ![](img_ludum_dare_logo.png)
 
