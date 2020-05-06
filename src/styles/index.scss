@@ -35,9 +35,13 @@ $showcase-heading-font: "anka-coder";
 
 	.showcase {
 		display: flex;
-		align-items: stretch;
-		flex-direction: row;
 		justify-content: space-between;
+		flex-direction: column-reverse;
+
+		@include bp(med) {
+			align-items: stretch;
+			flex-direction: row;
+		}
 
 		width: 100%;
 	}
@@ -56,9 +60,13 @@ $showcase-heading-font: "anka-coder";
 	}
 
 	.latest-post {
-		flex-grow: 3;
-		margin-right: 2rem;
-		width: 75%;
+		width: 100%;
+
+		@include bp(med) {
+			flex-grow: 3;
+			margin-right: 2rem;
+			width: 75%;
+		}
 
 		.post__date {
 			font-family: $showcase-heading-font;
@@ -66,11 +74,22 @@ $showcase-heading-font: "anka-coder";
 	}
 
 	.featured-project {
-		flex-grow: 1;
-		width: 25%;
 
-		border-left: 2px solid #0003;
-		padding-left: 1rem;
+		width: 100%;
+
+		@include bp(small) {
+			border-bottom: 2px solid #0003;
+			margin-bottom: 1rem;
+		}
+
+		@include bp(med) {
+			flex-grow: 1;
+
+			border-left: 2px solid #0003;
+			padding-left: 1rem;
+			width: 25%;
+		}
+
 
 		.project__preview {
 			margin-top: 1rem;

@@ -248,14 +248,12 @@ content {
 		.nav__links {
 			list-style-type: none;
 
-			// TODO: Make sure this is loading.
-			// TODO: font-size based on size of page;
 			font-family: 'anka-coder';
 			font-weight: bold;
 
 			@include bp(small) {
 				text-align: center;
-				font-size: 1.5rem;
+				font-size: 1.25rem;
 
 				li {
 					display: inline-block;
