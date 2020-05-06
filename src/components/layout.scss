@@ -114,9 +114,11 @@ content {
 	background: url("../data/img/img_background__code.png");
 
 	@include bp(small) {
-		height: 20vh;
+		min-height: 20vh;
 		width: 100%;
 		border-bottom: 0.25rem solid $brown-1;
+		margin: 0;
+		padding: 0;
 	}
 
 	@include bp(med) {
@@ -129,6 +131,7 @@ content {
 	// Add a sidebar wrapper so we can align these to the left and create a
 	// different background for the two of them.
 	.sidebar__wrapper {
+		position: absolute;
 		height: 100%;
 		@include bp(med) {
 			width: 82.5%;
@@ -139,10 +142,7 @@ content {
 		display: flex;
 		align-items: flex-end;
 
-		position: relative;
-
 		height: 100%;
-		overflow: hidden;
 
 		@include bp(small) {
 			float: left;
@@ -152,15 +152,15 @@ content {
 
 		@include bp(med) {
 			height: 40%;
+			max-width: 95%;
+			margin-left: auto;
+			margin-right: auto;
 		}
 
 		img {
 			display: block;
 			max-width: 100%;
 			margin: 0;
-
-			@include bp(small) {
-			}
 
 			@include bp(med) {
 				display: block;
