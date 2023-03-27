@@ -1,7 +1,5 @@
 # Shel Soloa Portfolio Website
 
-![](src/data/img/img_shelsoloa__portfolio.png)
-
 Hosted at [shelsoloa.com](http://shelsoloa.com)
 
 This repository is for the portfolio website of Shel Soloa
