@@ -7,8 +7,7 @@ import portrait from "../data/img/img_shelsoloa__portrait.png"
 
 import './layout.scss'
 
-
-export default props => (
+const Layout = (props) => (
 	<StaticQuery
 		query={graphql`
 			{
@@ -61,9 +60,9 @@ export default props => (
 							</ul>
 
 							<ul class='nav__social'>
-								<li><a href={'http://twitter.com/' + data.site.siteMetadata.social.twitter}><FaTwitter/></a></li>
-								<li><a href={'http://github.com/' + data.site.siteMetadata.social.github}><FaGithub/></a></li>
-								<li><a href={'http://medium.com/' + data.site.siteMetadata.social.medium}><FaMedium/></a></li>
+								<li><a aria-label='twitter link' href={'http://twitter.com/' + data.site.siteMetadata.social.twitter}><FaTwitter/></a></li>
+								<li><a aria-label='github link' href={'http://github.com/' + data.site.siteMetadata.social.github}><FaGithub/></a></li>
+								<li><a aria-label='medium link' href={'http://medium.com/' + data.site.siteMetadata.social.medium}><FaMedium/></a></li>
 							</ul>
 						</nav>
 					</div>
@@ -81,16 +80,17 @@ export default props => (
 
 					<div class='footer'>
 						<div class='inner'>
-							<a className='highlight' href={'https://twitter.com/' + data.site.siteMetadata.social.twitter}><FaTwitter /></a>
-							<a className='highlight' href={'https://github.com/' + data.site.siteMetadata.social.github}><FaGithub /></a>
-							<a className='highlight' href={'https://medium.com/' + data.site.siteMetadata.social.medium}><FaMedium /></a>
-							<a className='highlight' href={'https://' + data.site.siteMetadata.social.tumblr + '.tumblr.com'}><FaTumblr /></a>
-							<a className='highlight' href={'https://youtube.com/channel/' + data.site.siteMetadata.social.youtube}><FaYoutube /></a>
-							<p>Thanks for checking my stuff out</p>
+							<a className='highlight' aria-label='twitter link' href={'https://twitter.com/' + data.site.siteMetadata.social.twitter}>jo</a>
+							<a className='highlight' aria-label='github link' href={'https://github.com/' + data.site.siteMetadata.social.github}>.<FaGithub /></a>
+							<a className='highlight' aria-label='medium link' href={'https://medium.com/' + data.site.siteMetadata.social.medium}>.<FaMedium /></a>
+							<a className='highlight' aria-label='tumblr link' href={'https://' + data.site.siteMetadata.social.tumblr + '.tumblr.com'}>.<FaTumblr /></a>
+							<a className='highlight' aria-label='youtube link' href={'https://youtube.com/channel/' + data.site.siteMetadata.social.youtube}>.<FaYoutube /></a>
 						</div>
 					</div>
 				</content>
 			</div>
 		)}
 	/>
-)
+);
+
+export default Layout;
