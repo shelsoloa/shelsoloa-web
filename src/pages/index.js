@@ -8,7 +8,7 @@ import '../styles/index.scss'
 import logo_transparent from '../data/img/img_shelsoloa__logo--transparent.png'
 
 
-export default ({data}) => (
+const IndexPage = ({ data }) => (
 	<Layout class='index-page' header='' subheader=''>
 		<img class='logo' alt="It's Shel Soloa" description='My personal logo' src={logo_transparent}/>
 		<h1 class='header center'>Shel Soloa</h1>
@@ -44,7 +44,8 @@ export default ({data}) => (
 		<br/>
 		<br/>
 	</Layout>
-)
+);
+export default IndexPage;
 
 
 export const query = graphql`

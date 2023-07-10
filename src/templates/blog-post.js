@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 
 import './blog-post.scss'
 
-export default ({ data }) => {
+const BlogPost = ({ data }) => {
 	const post = data.markdownRemark
 	return (
 		<Layout class='post-page'>
@@ -22,6 +22,7 @@ export default ({ data }) => {
 		</Layout>
 	)
 }
+export default BlogPost;
 
 export const query = graphql`
 	query($slug: String!) {
