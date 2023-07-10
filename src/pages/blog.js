@@ -6,7 +6,7 @@ import { PostPreview } from "../components/post-components"
 
 import '../styles/blog.scss'
 
-export default ({ data }) => (
+const Blog = ({ data }) => (
 	<Layout class='blog-page' header='Blog Entries' subheader="on programming, development, and other interests">
 		{data.allMarkdownRemark.edges.map(({ node }) => (
 			<PostPreview
@@ -18,6 +18,7 @@ export default ({ data }) => (
 		))}
 	</Layout>
 )
+export default Blog;
 
 export const query = graphql`
 	{

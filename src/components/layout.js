@@ -39,8 +39,6 @@ const Layout = (props) => (
 					<meta name='description' content={data.site.siteMetadata.description}/>
 				</Helmet>
 
-				<div class='topbar'><a href="mailto:inquiry@shelsoloa.com">Currently available for contract work</a></div>
-
 				<div class='sidebar'>
 
 					<div class='sidebar__wrapper'>
