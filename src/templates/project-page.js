@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 
 import './project-page.scss'
 
-export default ({ data }) => {
+const ProjectPage = ({ data }) => {
 	const project = data.markdownRemark
 
 	return (
@@ -16,27 +16,27 @@ export default ({ data }) => {
 				<ul class='project__social'>
 					{project.frontmatter.website &&
 						<li>
-							<a href={project.frontmatter.website}><FaExternalLinkSquareAlt/></a>
+							<a aria-label='web link' href={project.frontmatter.website}><FaExternalLinkSquareAlt/></a>
 						</li>
 					}
 					{project.frontmatter.facebook &&
 						<li>
-							<a href={'http://facebook.com/' + project.frontmatter.facebook}><FaFacebook/></a>
+							<a aria-label='facebook link' href={'http://facebook.com/' + project.frontmatter.facebook}><FaFacebook/></a>
 						</li>
 					}
 					{project.frontmatter.github && 
 						<li>
-							<a href={'http://github.com/' + project.frontmatter.github}><FaGithub/></a>
+							<a aria-label='github link' href={'http://github.com/' + project.frontmatter.github}><FaGithub/></a>
 						</li>
 					}
 					{project.frontmatter.instagram &&
 						<li>
-							<a href={'http://instagram.com/' + project.frontmatter.instagram}><FaInstagram/></a>
+							<a aria-label='instagram link' href={'http://instagram.com/' + project.frontmatter.instagram}><FaInstagram/></a>
 						</li>
 					}
 					{project.frontmatter.twitter && 
 						<li>
-							<a href={'http://twitter.com/' + project.frontmatter.twitter}><FaTwitter/></a>
+							<a aria-label='twitter link' href={'http://twitter.com/' + project.frontmatter.twitter}><FaTwitter/></a>
 						</li>
 					}
 				</ul>
@@ -51,6 +51,7 @@ export default ({ data }) => {
 		</Layout>
 	)
 }
+export default ProjectPage;
 
 export const query = graphql`
 	query($slug: String!) {

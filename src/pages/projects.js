@@ -7,7 +7,7 @@ import {ProjectsSection, ProjectPreview} from "../components/project-components"
 import '../styles/projects.scss';
 
 
-export default ({data}) => (
+const ProjectsPage = ({data}) => (
 	<Layout class='projects-page' header='Projects' subheader="noteworthy projects developed throughout the years">
 	
 		<ProjectsSection>
@@ -23,13 +23,14 @@ export default ({data}) => (
 		</ProjectsSection>
 
 	</Layout>
-)
+);
+export default ProjectsPage;
 
 export const query = graphql`
 	query ProjectsQuery {
 		allMarkdownRemark(
 			filter: { fileAbsolutePath: { regex: "/projects/" } }
-			sort: { order: DESC, fields: [frontmatter___date] }
+			sort: { frontmatter: {date: DESC} }
 		) {
 			edges {
 				node {

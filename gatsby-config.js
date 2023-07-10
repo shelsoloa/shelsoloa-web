@@ -16,12 +16,7 @@ module.exports = {
 	},
 	plugins: [
 		`gatsby-plugin-sass`,
-		{
-			resolve: `gatsby-plugin-sharp`,
-			options: {
-				icon: `./src/data/img/img_shelsoloa__logo.png`
-			}
-		},
+		`gatsby-plugin-sharp`,
 		{
 			resolve: `gatsby-source-filesystem`,
 			options: {
