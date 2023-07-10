@@ -2,16 +2,16 @@
 
 
 body {
-	background-color: $bg-color;
-	color: $text-color;
+	background-color: $main-bg-color;
+	color: $main-text-color;
 }
 
 a {
 	text-decoration: none;
-	color: $highlight-color;
+	color: $main-hi-color;
 	
 	&:hover {
-		color: white;
+		color: $orange;
 	}
 }
 
@@ -20,5 +20,5 @@ a {
 }
 
 .highlight {
-	color: $highlight-color;
+	color: $main-hi-color;
 }

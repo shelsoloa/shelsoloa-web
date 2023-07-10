@@ -16,7 +16,7 @@ $showcase-heading-font: "anka-coder";
 
 	.header {
 		display: block;
-		color: $highlight-color;
+		color: $main-hi-color;
 		font-family: 'Damion', monospace;
 		font-size: 5rem;
 		margin-left: auto;
@@ -26,7 +26,7 @@ $showcase-heading-font: "anka-coder";
 
 	blockquote {
 		background-color: #0002;
-		border: 3px $highlight-color dashed;
+		border: 3px $main-hi-color dashed;
 		border-radius: 10px;
 		font-style: italic;
 		padding: 1rem;
@@ -100,7 +100,7 @@ $showcase-heading-font: "anka-coder";
 				background-color: #FFF1;
 				box-shadow: 0 0 8px #FFF1;
 				transform: scale(1.05);
-				border: 2px $highlight-color solid;
+				border: 2px $main-hi-color solid;
 			}
 		}
 	}

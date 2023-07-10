@@ -9,7 +9,7 @@
 
 .project-preview {
 	background-color: #0001;
-	border: 2px $highlight-color solid;
+	border: 2px $main-hi-color solid;
 	border-radius: 5%;
 	box-shadow: 0 0 8px #0008;
 	color: inherit;
@@ -24,7 +24,7 @@
 	margin-left: 2.5%;
 	margin-right: 2.5%;
 
-	@include bp(large) {
+	@include bp(med) {
 		width: 30%;
 		margin-left: auto;
 		margin-right:auto;

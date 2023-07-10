@@ -3,31 +3,31 @@
 .blog-page {
 
 	.highlight {
-		color: $highlight-color;
+		color: $main-hi-color;
 	}
 
 	.post-preview {
 		display: block;
 
 		.post__inner {
-			border-left-color: $highlight-color;
+			border-left-color: $main-hi-color;
 		}
 
 		.post__title {
-			color: $highlight-color;
+			color: $main-hi-color;
 		}
 
 		.post__date {
-			color: $highlight-color;
+			color: $main-hi-color;
 		}
 	}
 
 	.post-preview:hover {
 		.post__title {
-			color: $highlight-color;
+			color: $main-hi-color;
 		}
 		.post__inner {
-			border-left-color: $highlight-color;
+			border-left-color: $main-hi-color;
 		}
 	}
 }

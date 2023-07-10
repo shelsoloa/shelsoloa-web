@@ -3,17 +3,13 @@
 
 @mixin bp($point) {
 
-	$break-small: "(max-width: 639px)";
-	$break-mid: "(min-width: 640px)";
-	$break-large: "(min-width: 960px)";
+	$break-small: "(max-width: 959px)";
+	$break-mid: "(min-width: 960px)";
 
 	@if $point == small {
 		@media #{$break-small} { @content; }
 	}
 	@else if $point == med {
 		@media #{$break-mid} { @content; }
-	}
-	@else if $point == large {
-		@media #{$break-large}  { @content; }
 	}
 }
