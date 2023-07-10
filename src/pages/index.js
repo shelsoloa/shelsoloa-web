@@ -5,16 +5,9 @@ import Layout from '../components/layout';
 
 import '../styles/index.scss';
 
-import logo_transparent from '../data/img/img_shelsoloa__logo--transparent.png';
-
 const IndexPage = ({ data }) => (
   <Layout class="index-page" header="" subheader="">
-    <img class="logo" alt="It's Shel Soloa" description="My personal logo" src={logo_transparent} />
     <h1 class="header center">Shel Soloa</h1>
-    <blockquote>
-      Available for new contracts
-      <br />
-    </blockquote>
 
     <hr />
 

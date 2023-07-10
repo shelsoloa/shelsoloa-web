@@ -1,9 +1,9 @@
 import React from 'react';
 import { graphql, Link, StaticQuery } from 'gatsby';
-import { FaGithub, FaMedium, FaTumblr, FaTwitter, FaYoutube } from 'react-icons/fa';
+import { FaGithub, FaMedium, FaTwitter } from 'react-icons/fa';
 import { Helmet } from 'react-helmet';
 
-import portrait from '../data/img/img_shelsoloa__portrait.png';
+import logo from '../data/img/img_shelsoloa__logo--transparent.png';
 
 import './layout.scss';
 
@@ -40,15 +40,15 @@ const Layout = props => (
 
         <div class="sidebar">
           <div class="sidebar__wrapper">
-            <div class="sidebar__portrait">
-              <img alt="Shel Soloa" description="My portrait" src={portrait} />
+            <div class="sidebar__image">
+              <img alt="Shel Soloa" description="the shellbot logo" src={logo} />
             </div>
 
-            <nav>
-              <h1 class="nav__header">Shel Soloa</h1>
+            <hr />
 
+            <nav>
               <ul class="nav__links">
-                <li class="current-section">
+                <li>
                   <Link to="/">Home</Link>
                 </li>
                 <li>
@@ -89,46 +89,6 @@ const Layout = props => (
             <p class="highlight content__subheader">{props.subheader}</p>
 
             <div class="content__inner">{props.children}</div>
-          </div>
-
-          <div class="footer">
-            <div class="inner">
-              <a
-                className="highlight"
-                aria-label="twitter link"
-                href={'https://twitter.com/' + data.site.siteMetadata.social.twitter}
-              >
-                <FaTwitter />
-              </a>
-              <a
-                className="highlight"
-                aria-label="github link"
-                href={'https://github.com/' + data.site.siteMetadata.social.github}
-              >
-                <FaGithub />
-              </a>
-              <a
-                className="highlight"
-                aria-label="medium link"
-                href={'https://medium.com/' + data.site.siteMetadata.social.medium}
-              >
-                <FaMedium />
-              </a>
-              <a
-                className="highlight"
-                aria-label="tumblr link"
-                href={'https://' + data.site.siteMetadata.social.tumblr + '.tumblr.com'}
-              >
-                <FaTumblr />
-              </a>
-              <a
-                className="highlight"
-                aria-label="youtube link"
-                href={'https://youtube.com/channel/' + data.site.siteMetadata.social.youtube}
-              >
-                <FaYoutube />
-              </a>
-            </div>
           </div>
         </content>
       </div>
