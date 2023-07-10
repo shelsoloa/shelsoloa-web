@@ -16,7 +16,12 @@ module.exports = {
 	},
 	plugins: [
 		`gatsby-plugin-sass`,
-		`gatsby-plugin-sharp`,
+		{
+			resolve: `gatsby-plugin-sharp`,
+			options: {
+				icon: `./src/data/img/img_shelsoloa__logo.png`
+			}
+		},
 		{
 			resolve: `gatsby-source-filesystem`,
 			options: {
@@ -39,12 +44,6 @@ module.exports = {
 			}
 		},
 		`gatsby-plugin-emotion`,
-		{
-			resolve: `gatsby-plugin-favicon`,
-			options: {
-				logo: `./src/data/img/img_shelsoloa__logo.png`
-			}
-		},
 		`gatsby-plugin-react-helmet`,
         {
           resolve: "gatsby-plugin-web-font-loader",
