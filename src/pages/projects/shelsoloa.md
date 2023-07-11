@@ -9,19 +9,18 @@ github: shelsoloa/shelsoloa-web
 website: http://shelsoloa.com
 ---
 
-> My portfolio website
+> My landing page
 
-
-A place for me to post about all my projects and technical musings.
-
+This is a place for me to share info on my projects, technical musings, and various writings. It's seen a lot of different iterations and I don't do a great job of keeping it regularly updated.
 
 ## Background on shelsoloa.com
 
-Made from scratch using Gatsby.js and StackOverflow, this website was initially developed over two weeks. I try to regularly maintain it, when life doesn't get too hectic.
+Made from scratch using Gatsby.js, hosted on Netlify. I try to regularly maintain it, when life doesn't get too hectic.
 
 
 ## Tools used
 
 - Gatsby.JS
+- Netlify
 - SASS
 - coolors.co
