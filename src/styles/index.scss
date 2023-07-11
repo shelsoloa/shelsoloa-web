@@ -18,7 +18,7 @@ $showcase-heading-font: "anka-coder";
 		display: block;
 		color: $main-hi-color;
 		font-family: 'Damion', monospace;
-		font-size: 5rem;
+		font-size: 4.5rem;
 		margin-left: auto;
 		margin-right: auto;
 		margin-bottom: 0;
@@ -90,11 +90,16 @@ $showcase-heading-font: "anka-coder";
 			width: 25%;
 		}
 
-
 		.project__preview {
 			margin-top: 1rem;
 			border-radius: 1rem;
 			transition: all 150ms;
+
+			@include bp(small) {
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+			}
 
 			&:active, &:hover {
 				background-color: #FFF1;

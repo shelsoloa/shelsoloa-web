@@ -20,9 +20,11 @@
 	transition: all 150ms;
 	margin-bottom: 1rem;
 
-	width: 45%;
-	margin-left: 2.5%;
-	margin-right: 2.5%;
+	@include bp(small) {
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;	
+	}
 
 	@include bp(med) {
 		width: 30%;
@@ -36,19 +38,25 @@
 		transform: scale(1.05);
 	}
 
-	img {
-		// TODO force 1:1 aspect ratio
-		
-		background-color: black;
-		display: block;
-		margin: 0;
-		margin-bottom: 1rem;
-		width: 100%;
-		height: 200px;
-	}
-
 	hr {
 		margin: 0;
+	}
+
+	.preview__image-wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0.5rem;
+		width: auto;
+		height: 60%;
+
+		.preview__image {
+			display: block;
+			max-height: 100%;	
+			margin: auto;
+			margin-left: auto;
+			margin-right: auto;
+		}
 	}
 
 	.preview__description, .preview__title {

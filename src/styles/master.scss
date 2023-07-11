@@ -3,8 +3,8 @@
 
 @mixin bp($point) {
 
-	$break-small: "(max-width: 959px)";
-	$break-mid: "(min-width: 960px)";
+	$break-small: "(max-width: 767px)";
+	$break-mid: "(min-width: 768px)";
 
 	@if $point == small {
 		@media #{$break-small} { @content; }

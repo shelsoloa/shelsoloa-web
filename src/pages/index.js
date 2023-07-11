@@ -7,7 +7,7 @@ import '../styles/index.scss';
 
 const IndexPage = ({ data }) => (
   <Layout class="index-page" header="" subheader="">
-    <h1 class="header center">Shel Soloa</h1>
+    <h1 class="header center">ShelSoloa</h1>
 
     <hr />
 
