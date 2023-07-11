@@ -8,7 +8,7 @@ That's pretty much it.
 
 ## Get in touch 🤝
 
-I'm not looking for a permanent role currently but I'm down to collaborate on projects I find interesting.
+I'm not looking for a permanent role currently but I'm always down to collaborate on projects I find interesting.
 
 Best way to reach me is through my email: [shel@shelsoloa.com](mailto:shel@shelsoloa.com), but you can also reach / follow me at any of these places:
 

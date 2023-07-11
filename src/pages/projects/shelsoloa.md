@@ -1,6 +1,6 @@
 ---
-title: shelsoloa
-subtitle: "You're here right now"
+title: shelsoloa.com
+subtitle: "My landing page"
 preview_image: "../../data/img/img_shelsoloa__portfolio.png"
 date: 2019-06-28
 status: "Completed"

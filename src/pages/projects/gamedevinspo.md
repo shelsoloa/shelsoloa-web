@@ -1,6 +1,6 @@
 ---
 title: GameDevInspo
-subtitle: "A blog that shows off awesome gamedev content to gamedevs"
+subtitle: "Curated blog for showcasing indie game development content"
 preview_image: "../../data/img/img_GDI__logo.png"
 banner_image: "../../data/img/img_GDI__banner.png"
 date: 2021-01-01
