@@ -7,18 +7,7 @@ import { ProjectsSection, ProjectPreview } from '../components/project-component
 import '../styles/projects.scss';
 
 const ProjectsPage = ({ data }) => (
-  <Layout class="projects-page" header="Projects" subheader="noteworthy projects developed throughout the years">
-    <ProjectsSection>
-      {data.allMarkdownRemark.edges.map(({ node }) => (
-        <ProjectPreview
-          title={node.frontmatter.title}
-          description={node.frontmatter.subtitle}
-          image={node.frontmatter.preview_image.publicURL}
-          image_alt={node.frontmatter.title + ' preview image'}
-          to={node.fields.slug}
-        />
-      ))}
-    </ProjectsSection>
+  <Layout class="projects-page" header="Projects" subheader="">
   </Layout>
 );
 export default ProjectsPage;

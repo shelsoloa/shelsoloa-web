@@ -4,42 +4,11 @@ import { graphql } from 'gatsby';
 import Layout from '../components/layout';
 
 import '../styles/index.scss';
+import logo from '../data/img/img_shelsoloa__logo--transparent.png'
 
 const IndexPage = ({ data }) => (
   <Layout class="index-page" header="" subheader="">
-    <h1 class="header center">ShelSoloa</h1>
-
-    <hr />
-
-    <div class="showcase">
-      <div class="showcase__section latest-post">
-        <h2 class="showcase__section-title">Latest Post</h2>
-
-        <a class="showcase__link" href={data.mostRecentPost.fields.slug}>
-          <h1 class="showcase__section-name">{data.mostRecentPost.frontmatter.title}</h1>
-          <p class="post__date">{data.mostRecentPost.frontmatter.date}</p>
-        </a>
-
-        <div dangerouslySetInnerHTML={{ __html: data.mostRecentPost.html }} />
-      </div>
-
-      <div class="showcase__section featured-project">
-        <h2 class="showcase__section-title">Featured Work</h2>
-        <a class="showcase__link" href={data.featuredProject.fields.slug}>
-          <h1 class="showcase__section-name">{data.featuredProject.frontmatter.title}</h1>
-          <img
-            class="project__preview"
-            src={data.featuredProject.frontmatter.preview_image.publicURL}
-            alt={data.featuredProject.frontmatter.title + ' preview image'}
-          />
-        </a>
-        <p>{data.featuredProject.frontmatter.subtitle}</p>
-      </div>
-    </div>
-
-    <br />
-    <br />
-    <br />
+    <img class='header center' src={logo} />
   </Layout>
 );
 export default IndexPage;
