@@ -7,8 +7,9 @@ import '../styles/index.scss';
 import logo from '../data/img/img_shelsoloa__logo--transparent.png'
 
 const IndexPage = ({ data }) => (
-  <Layout class="index-page" header="" subheader="">
-    <img class='header center' src={logo} />
+  <Layout class="index-page center" header="" subheader="">
+    <img src={logo} />
+    <p><a href='mailto:shel@shelsoloa.com'>shel@shelsoloa.com</a></p>
   </Layout>
 );
 export default IndexPage;
