@@ -20,7 +20,7 @@ export default function Home() {
 
         <h2 className="text-lg font-bold mt-4">Things I've done in the past</h2>
         <ul className="list-disc list-inside">
-          <li>Yelp - I was a Senior Software Engineer in the Reservations organization. I led a team of 15+ engineers to develop Yelp Guest Manager.</li>
+          <li>Yelp - I was a Senior Software Engineer in the Restaurants organization. I led a team of 15+ engineers to develop Yelp Guest Manager.</li>
           <li>GamedevInspo - Created a game development inspiration blog. Grew to roughly 10k followers across all platforms.</li>
           <li>Game development under "shellbot" alias - Started a game development studio, ultimately bombed.</li>
         </ul>
