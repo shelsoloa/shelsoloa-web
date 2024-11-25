@@ -10,6 +10,18 @@ const ligaSFMono = localFont({
 export const metadata: Metadata = {
   title: "Sheldon Soloa",
   description: "...",
+  keywords: [
+    "Software Engineer",
+    "Marketing Tech",
+    "Social Media Tools",
+    "Social Media Tech",
+    "Influencer Marketing",
+    "Promoexchange",
+    "Sheldon Soloa",
+    "shelsoloa",
+    "Sheldon Allen",
+    "Social Media Marketing",
+  ],
 };
 
 export default function RootLayout({
