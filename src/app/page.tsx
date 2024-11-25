@@ -12,7 +12,7 @@ export default function Home() {
         <p>Software Engineer based in Toronto, Canada</p>
 
         <div className="border flex flex-col border-blue-500 rounded-lg p-4 mt-4">
-          <p>Currently focusing on marketing tech. If you&apos;re in the influencer marketing space, <a href="mailto:shel@shelsoloa.com" className="text-blue-500">drop me a line!</a></p>
+          <p>Currently building digital marketing tech. If you&apos;re in the influencer marketing space, <a href="mailto:shel@shelsoloa.com" className="text-blue-500">drop me a line!</a></p>
         </div>
 
         <h2 className="text-lg font-bold mt-4">What I&apos;m working on currently:</h2>
