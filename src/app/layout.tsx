@@ -36,8 +36,8 @@ export default function RootLayout({
         className={`${ligaSFMono.className} antialiased`}
       >
         {children}
+        <Analytics />
       </body>
-      <Analytics />
     </html>
   );
 }
