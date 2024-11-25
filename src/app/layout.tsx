@@ -8,7 +8,7 @@ const ligaSFMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "shel soloa",
+  title: "Sheldon Soloa",
   description: "...",
 };
 
