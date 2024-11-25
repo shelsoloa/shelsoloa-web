@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const ligaSFMono = localFont({
@@ -36,6 +37,7 @@ export default function RootLayout({
       >
         {children}
       </body>
+      <Analytics />
     </html>
   );
 }
