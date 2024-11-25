@@ -3,7 +3,7 @@ import shellbot_logo from "@/public/img_shelsoloa__logo--transparent.png"
 
 export default function Home() {
   return (
-    <div className="flex flex-col h-screen">
+    <div className="flex flex-col h-screen px-8">
       <div className="flex flex-col max-w-5xl w-full mx-auto border p-8 my-8 rounded-lg">
         
         <Image src={shellbot_logo} className="mx-auto mb-4" alt="shel soloa logo" width={100} height={100} />
