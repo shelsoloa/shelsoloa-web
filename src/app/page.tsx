@@ -26,7 +26,7 @@ export default function Home() {
         <ul className="list-disc list-inside">
           <li>Email: <a href="mailto:shel@shelsoloa.com" className="text-blue-500">shel@shelsoloa.com</a></li>
           <li>LinkedIn: <a href="https://www.linkedin.com/in/shelsoloa/" className="text-blue-500">Sheldon Soloa</a></li>
-          <li>Twitter: <a href="https://twitter.com/shelsoloa" className="text-blue-500">@shelsoloa</a></li>
+          {/* <li>Twitter: <a href="https://twitter.com/shelsoloa" className="text-blue-500">@shelsoloa</a></li> */}
           <li>GitHub: <a href="https://github.com/shelsoloa" className="text-blue-500">shelsoloa</a></li>
         </ul>
       </div>
