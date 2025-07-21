@@ -17,9 +17,9 @@ export default function Home() {
 
         <h2 className="text-lg font-bold mt-4">What I&apos;m working on currently:</h2>
         <ul className="list-disc list-inside">
+          <li>Founder @ <a href="https://branebridge.com" className="text-blue-500">BraneBridge</a></li>
           <li>Founder @ <a href="https://promoexchange.io" className="text-blue-500">Promoexchange.io</a></li>
           <li>Cloud Engineering Lead @ OtO Lawn</li>
-          <li>Fractional CTO @ Gabzebo Interactive Media</li>
         </ul>
 
         <h2 className="text-lg font-bold mt-4">Where to find me:</h2>
