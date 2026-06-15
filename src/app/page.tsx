@@ -19,7 +19,8 @@ export default function Home() {
 
         <h2 className="text-lg font-bold mt-4">Other projects:</h2>
         <ul className="list-disc list-inside">
-          <li>Founded @ <a href="https://promoexchange.io" className="text-blue-500">promoexchange.io</a></li>
+        <li><a href="https://dontcancel.me" className="text-blue-500">dontcancel.me</a></li>
+        <li><a href="https://promoexchange.io" className="text-blue-500">promoexchange.io</a></li>
         </ul>
 
         <h2 className="text-lg font-bold mt-4">Where to find me:</h2>
